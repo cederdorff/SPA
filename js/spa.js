@@ -1,19 +1,21 @@
-// Hides all the pages
+"use strict";
+
+// Hides all the pages //
 function hideAllPages() {
-    let pages = document.querySelector(".page");
+    let pages = document.querySelectorAll(".page");
     for (let page of pages) {
         page.style.display = "none";
     }
 }
 
-// Display page
+// Display page //
 function showPage(pageId) {
     hideAllPages();
     document.querySelector(`#${pageId}`).style.display = "block";
     setActiveTab(pageId);
 }
 
-// Sets active tabbar
+// Sets active tabbar //
 function setActiveTab(pageId) {
     let pages = document.querySelectorAll(".tabbar a");
     for (let page of pages) {
@@ -25,12 +27,12 @@ function setActiveTab(pageId) {
     }
 }
 
-// Change to new page
+// Change to new page //
 function navigateTo(pageId) {
     location.href = `#${pageId}`;
 }
 
-// Sets default page
+// Sets default page //
 function pageChange() {
     let page = "home";
     if (location.hash) {
