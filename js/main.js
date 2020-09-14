@@ -2,6 +2,9 @@
 window.addEventListener("load", function () {
     const splice = document.querySelector(".splice");
     splice.className += " hidden";
+    setTimeout(() => {
+        splice.style.display = "none";
+    }, 3000)
 });
 
 // Single page application content //
