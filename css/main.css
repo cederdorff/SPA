@@ -48,6 +48,10 @@
     animation-fill-mode: forwards;
 }
 
+.splice img {
+    width: 75%;
+}
+
 @keyframes fadeOut {
     0% {
         background: #FF5959;
