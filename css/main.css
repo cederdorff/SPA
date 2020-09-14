@@ -13,6 +13,10 @@ frame {
     height: auto;
 }
 
+body {
+    background-color: #f9f8f3;
+}
+
 /* Tabbar */
 .tabbar {
     background-color: #F9F8F3;
@@ -95,12 +99,68 @@ frame {
     }
 }
 
-<<<<<<< HEAD
+/* Info screen */
 
+.info_container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    /*top: 88vh;*/
+    top: 0;
+    width: 100vw;
+    height: 82vh;
+    background-color: #f9f8f3;
+    padding-top: 10vh;
+    z-index: 1;
+}
 
+.page_title {
+    font-family: "Josefin Sans";
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #212322;
+    margin: 5vh auto 4vh auto;
+}
 
+.page_text {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+    color: #212322;
+    margin: 0 5vh;
+}
 
+.details_text {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+    color: #212322;
+    width: 55vw;
+}
 
+.page_details {
+    margin: 4vh 5vh 2vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100px 100px 100px;
+}
+
+.page_icons {
+    height: 20vw;
+}
+
+.page_link {
+    font-family: "Century Gothic";
+    font-weight: normal;
+    font-size: 17px;
+    text-align: left;
+    color: #27D07D;
+    margin: 2vh 5vh 25vh;
+    text-decoration: none;
+}
 
 /*home screen - place details*/
 
@@ -216,6 +276,7 @@ frame {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
 
 }
 
@@ -276,17 +337,15 @@ frame {
     margin: 3vh auto 2vh 3vh;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    ...
-}
-=======
->>>>>>> 1af7731580715b9d5039f6554423acc18a2c4c87
-
 /* Page styling */
 .page {
     display: none;
     animation: fadeIn 0.4s;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    ...
 }
 
 /* Extra small devices (phones, 600px and down) */
