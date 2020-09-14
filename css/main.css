@@ -48,7 +48,7 @@ frame {
 
 .splice {
     position: fixed;
-    z-index: 9999;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,6 +61,10 @@ frame {
 .splice.hidden {
     animation: fadeOut 3s;
     animation-fill-mode: forwards;
+}
+
+.splice img {
+    width: 75%;
 }
 
 @keyframes fadeOut {
@@ -91,6 +95,7 @@ frame {
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -275,23 +280,18 @@ frame {
 @media only screen and (max-width: 600px) {
     ...
 }
+=======
+>>>>>>> 1af7731580715b9d5039f6554423acc18a2c4c87
+
+/* Page styling */
+.page {
+    display: none;
+    animation: fadeIn 0.4s;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    ...
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    ...
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    ...
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    ...
-}
+@media only screen and (min-width: 600px) {}
