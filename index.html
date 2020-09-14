@@ -8,6 +8,7 @@
      <link rel="stylesheet" href="css/main.css">
      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://use.typekit.net/dcn1ymp.css">
+     <link rel="stylesheet" href="Sass/main.css">
 </head>
 
 <body onhashchange="pageChange()">
@@ -40,9 +41,36 @@
 
      <!-- Home page -->
      <section id="home" class="page">
-     </section>
-
-     <!-- Favourites page -->
+          <div class="place-details-on-map">
+               <div class="icon-bottom-container">
+                    <div class="icon-top-container">
+                         <!-- logo icon -->
+                    </div>
+               </div>
+               <h1 class="title-white">Here will be title js api</h1>
+               <p class="subtitle-white">adress js api</p>
+               <p class="subtitle-bold-white">This place is too crowded</p>
+               <a href='details' class="arrow-position">
+                    <img class="arrow-up" src="media/Icon ionic-ios-arrow-back.png">
+               </a>
+          </div>
+          <div class='place-details' id='details'>
+               <div class="green-bar">
+                    <a href='details' class="arrow-position">
+                         <img class="arrow-back" src="media/Icon ionic-ios-arrow-back.png">
+                    </a>
+                    <h1 class="bar-logo">SafeToGo</h1>
+               </div>
+               <h1 class="title-details">title js api</h1>
+               <p class="subtitle-details">adress js api</p>
+               <p class="should-i-go">Should I go?</p>
+               <div class="gradient-bar">
+                    <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
+                    <img src="media/Icon material-location-on.png">
+                    <img src="media/ios-close-circle-outline.png">
+               </div>
+          </div>
+     </section> <!-- Favourites page -->
      <section id="favourites" class="page">
      </section>
 
