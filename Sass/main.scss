@@ -1,6 +1,95 @@
-@import url("Sass/colours.scss");
+@import "../Sass/colours.scss";
 
 #onboarding {
      width: 100%;
      height: 100vh;
+
+     &>div {
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          background-color: $white;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 2;
+
+          .top_part {
+
+               width: 100%;
+               height: 8vh;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+
+               img {
+                    width: 100px;
+                    margin-left: 7%;
+               }
+
+               p {
+                    margin-right: 7%;
+                    font-family: $Josefine;
+                    font-size: 20px;
+                    color: $black;
+               }
+          }
+
+          &>img:nth-child(2) {
+               height: 320px;
+               padding: 50px 0;
+          }
+
+          &>h3 {
+               font-family: $Josefine;
+               font-weight: 600;
+               font-size: 1.5em;
+               color: $black;
+          }
+
+          &>p {
+               font-family: $Century-Gothic;
+               font-size: 1.2em;
+               color: $black;
+               width: 80%;
+               text-align: center;
+               padding: 30px 0;
+          }
+
+          &>button {
+               text-align: center;
+               color: $white;
+               background-color: $green;
+               width: 170px;
+               height: 45px;
+               font-size: 1.2em;
+               border: 0;
+               border-radius: 6px;
+               margin: 25px 0;
+               margin-bottom: 5px;
+               filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          }
+
+          &>img:nth-last-child(1) {
+               width: 75px;
+          }
+     }
+
+     &>div:nth-last-child(1) {
+          z-index: 2;
+     }
+
+     &>div:nth-last-child(2) {
+          z-index: 3;
+     }
+
+     &>div:nth-last-child(3) {
+          z-index: 4;
+     }
+
+     &>div:nth-last-child(4) {
+          z-index: 5;
+     }
 }
