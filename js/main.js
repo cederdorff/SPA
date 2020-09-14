@@ -3,3 +3,5 @@ window.addEventListener("load", function () {
     const splice = document.querySelector(".splice");
     splice.className += " hidden";
 });
+
+// Single page application content //
