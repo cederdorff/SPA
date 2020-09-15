@@ -102,69 +102,6 @@ body {
     }
 }
 
-/* Info screen */
-
-.info_container {
-    display: flex;
-    flex-direction: column;
-    /*top: 88vh;*/
-    top: 0;
-    width: 100vw;
-    height: 82vh;
-    background-color: #f9f8f3;
-    z-index: 1;
-}
-
-.page_title {
-    font-family: "Josefin Sans";
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    color: #212322;
-    margin: 5vh auto 4vh auto;
-}
-
-.page_text {
-    font-family: "Century Gothic";
-    font-weight: normal;
-    font-size: 17px;
-    text-align: left;
-    color: #212322;
-    margin: 0 5vh;
-}
-
-.details_text {
-    font-family: "Century Gothic";
-    font-weight: normal;
-    font-size: 17px;
-    text-align: left;
-    color: #212322;
-    width: 54vw;
-    margin: 3vh 2vw;
-}
-
-.page_details {
-    margin: 4vh 5vh 2vh;
-    display: grid;
-    grid-template-columns: 30% 70%;
-}
-
-.page_icons {
-    height: 80%;
-    width: 80%;
-    margin: auto;
-}
-
-.page_link {
-    font-family: "Century Gothic";
-    font-weight: normal;
-    font-size: 17px;
-    text-align: left;
-    color: #27D07D;
-    margin: 2vh 5vh 20vh;
-    text-decoration: none;
-}
-
 /*home screen - place details*/
 #details-going-up {
     position: absolute;
@@ -459,89 +396,110 @@ body {
     margin: 5px auto 5px 5px;
 }
 
+/* Favourites screen */
+
+#favourites {}
+
+
 .fav {
-    font-family: "Century Gothic";
+    font-family: "Josefin Sans";
     font-weight: bold;
     font-size: 30px;
     text-align: center;
-    margin-top: 20px;
+    color: #212322;
+    margin: 5vh auto 4vh auto
 }
 
 .btn-group .button {
-    margin-top: 20px;
-    font-family: "Josefin Sans";
+    font-family: "Century Gothic";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 19px;
     text-align: center;
-    padding: 10px;
-    background-color:#F9F8F3;
-    border-radius: 10px;
+    padding: 7px;
+    background-color: #F9F8F3;
+    border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    border: 2px solid #c9c9c9;
+    border: 1px solid #c9c9c9;
     text-decoration: none;
-    cursor: pointer;
+    width: 40vw;
     opacity: 1;
-    margin-left: 40px;
     justify-content: space-around;
-
 }
 
+.btn-group {
+    margin: 0 10vw;
+}
 
-.btn-group .button:hover  {
+.filter {
+    background-color: #F9F8F3;
+    border: none;
+    font-family: "Century Gothic";
+    font-size: 19px;
+    float: right;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    padding: 10px;
+}
+
+.btn-group .button:hover {
     opacity: 0.8;
     background-color: #bbbaba;
     color: rgb(255, 255, 255);
 }
 
-
 .places {
     width: 200px;
+    font-family: "Josefin Sans";
 }
 
 .place {
     margin-left: 20px;
 }
 
-.street{
-    margin-left: 20px; 
+.street {
+    margin-left: 20px;
+    font-family: 'Century Gothic';
 }
+
 .yellow {
-    margin: 10px;
+    margin: 2vh 5vh 2vh;
     width: 10px;
     background-color: yellow;
 }
+
 .red {
-    margin: 10px;
+    margin: 2vh 5vh 2vh;
     width: 10px;
     background-color: rgb(255, 17, 0);
 }
 
 .green {
-    margin: 10px;
+    margin: 2vh 5vh 2vh;
     width: 10px;
     background-color: rgb(0, 196, 33);
 }
-.supermarket-button{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Josefin Sans";
+
+.supermarket-button {
+    font-family: "Century Gothic";
     font-weight: normal;
-    font-size: 24px;
+    font-size: 19px;
     text-align: center;
-    padding: 10px;
-    background-color:#F9F8F3;
-    border-radius: 10px;
+    padding: 7px;
+    background-color: #F9F8F3;
+    border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    border: 2px solid #c9c9c9;
+    border: 1px solid #c9c9c9;
     text-decoration: none;
-    cursor: pointer;
+    width: 40vw;
     opacity: 1;
-    margin-left: 40px;
     justify-content: space-around;
+    margin: 0 10vw;
 
 }
 
-.supermarket-button:hover  {
+.supermarket-button:hover {
     opacity: 0.8;
     background-color: #bbbaba;
     color: rgb(255, 255, 255);
