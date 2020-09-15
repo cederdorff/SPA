@@ -7,6 +7,8 @@ window.addEventListener("load", function () {
     }, 3000)
 });
 
+
+
 // Onboarding mechanic
 
 const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
