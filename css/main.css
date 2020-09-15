@@ -459,6 +459,87 @@ body {
     margin: 5px auto 5px 5px;
 }
 
+.fav {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-group .button {
+    margin-top: 20px;
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    background-color:#F9F8F3;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border: 2px solid #c9c9c9;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+    margin-left: 40px;
+    justify-content: space-around;
+
+}
+
+
+.btn-group .button:hover  {
+    opacity: 0.8;
+    background-color: #bbbaba;
+    color: rgb(255, 255, 255);
+}
+
+
+.places {
+    width: 200px;
+}
+
+.place {
+    margin-left: 20px;
+}
+
+.street{
+    margin-left: 20px; 
+}
+.yellow {
+    margin: 10px;
+    width: 10px;
+    background-color: yellow;
+}
+.red {
+    margin: 10px;
+    width: 10px;
+    background-color: rgb(255, 17, 0);
+}
+
+.green {
+    margin: 10px;
+    width: 10px;
+    background-color: rgb(0, 196, 33);
+}
+.supermarket-button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    background-color:#F9F8F3;
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    border: 2px solid #c9c9c9;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 1;
+    margin-left: 40px;
+    justify-content: space-around;
+
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
