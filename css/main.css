@@ -49,9 +49,9 @@ body {
     width: 65%;
 }
 
-/* Splice screen - source: https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode */
+/* Splash screen - source: https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode */
 
-.splice {
+.splash {
     position: fixed;
     z-index: 2;
     display: flex;
@@ -64,30 +64,30 @@ body {
     background: #FF5959;
 }
 
-.splice.hidden {
+.splash.hidden {
     animation: fadeOut 3s;
     animation-fill-mode: forwards;
     background: #FF5959;
 }
 
-.splice img {
+.splash img {
     width: 75%;
 }
 
 @keyframes fadeOut {
     0% {
         background: #FF5959;
-        opacity: 100;
+        opacity: 1;
     }
 
     25% {
         background: #FBBE4B;
-        opacity: 100;
+        opacity: 1;
     }
 
     75% {
         background: #27D07D;
-        opacity: 100;
+        opacity: 1;
     }
 
     90% {
