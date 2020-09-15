@@ -7,6 +7,28 @@ window.addEventListener("load", function () {
     }, 3000)
 });
 
+
+// Single page application content //
+
+
+//opening details after clicking on map
+//opening details of the place after clicking on arrow up
+
+
+
+function goDetails() {
+    document.getElementsByClassName("arrow-up").addEventListener("click", function () {
+        document.getElementById("details-going-up").setAttribute = ('top', '-40vh');
+    });
+};
+
+function goMap() {
+    document.getElementsByClassName("arrow-back").addEventListener("click", function () {
+        document.getElementById("details-going-up").setAttribute = ('top', 'calc(100vh - 100px - 40vh)');
+
+    });
+}
+
 // Onboarding mechanic
 
 const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
@@ -19,10 +41,11 @@ for (let i = 0; i < 4; i++) {
         onBoardingContainers[i].style.display = "none";
     })
 }
-
-onBoardingSkip[0].addEventListener('click', () => {
-    for (let i = 0; i < 4; i++) {
-        onBoardingContainers[i].style.display = "none";
-    }
-})
+for (let j = 0; j < 4; j++) {
+    onBoardingSkip[j].addEventListener('click', () => {
+        for (let i = 0; i < 4; i++) {
+            onBoardingContainers[i].style.display = "none";
+        }
+    })
+}
 // Single page application content //
