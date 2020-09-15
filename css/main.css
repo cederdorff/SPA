@@ -140,17 +140,18 @@ body {
     text-align: left;
     color: #212322;
     width: 55vw;
+    margin: 3vh 0;
 }
 
 .page_details {
     margin: 4vh 5vh 2vh;
     display: grid;
     grid-template-columns: 30% 70%;
-    grid-template-rows: 100px 100px 100px;
 }
 
 .page_icons {
-    height: 20vw;
+    height: 9vh;
+    margin: 1vh 0;
 }
 
 .page_link {
