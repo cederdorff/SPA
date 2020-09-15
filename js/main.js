@@ -11,32 +11,18 @@ window.addEventListener("load", function () {
 // Single page application content //
 
 
-//opening details after clicking on map
+//opening details 
 
-/* function goDetails() {
-    document.getElementsByClassName("arrow-up").addEventListener("click", function () {
-        document.getElementById("details-going-up").setAttribute = ('top', '-40vh');
-    });
-}; */
-function bb() {
-    document.getElementsByClassName("arrow-up").addEventListener("click", function () {
-        document.getElementById("details-going-up").setAttribute = ('top', '-40vh');
-    });
+function goDetails() {
+    document.getElementById('details-going-up').style.top = '-40vh';
 }
-//opening details of the place after clicking on arrow up
-/*
+
 function goMap() {
-    document.getElementsByClassName("arrow-back").addEventListener("click", function () {
-        document.getElementById("details-going-up").setAttribute = ('top', 'calc(100vh - 100px - 40vh)');
-
-    });
-} */
-function bm() {
-    document.getElementsByClassName("arrow-back").addEventListener("click", function () {
-        document.getElementById("details-going-up").setAttribute = ('top', 'calc(100vh - 100px - 40vh)');
-
-    });
+    document.getElementById('details-going-up').style.top = 'calc(100vh - 100px - 40vh)';
 }
+
+
+
 // Onboarding mechanic
 
 const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
