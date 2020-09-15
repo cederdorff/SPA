@@ -49,9 +49,9 @@ body {
     width: 65%;
 }
 
-/* Splice screen - source: https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode */
+/* Splash screen - source: https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode */
 
-.splice {
+.splash {
     position: fixed;
     z-index: 2;
     display: flex;
@@ -64,30 +64,30 @@ body {
     background: #FF5959;
 }
 
-.splice.hidden {
+.splash.hidden {
     animation: fadeOut 3s;
     animation-fill-mode: forwards;
     background: #FF5959;
 }
 
-.splice img {
+.splash img {
     width: 75%;
 }
 
 @keyframes fadeOut {
     0% {
         background: #FF5959;
-        opacity: 100;
+        opacity: 1;
     }
 
     25% {
         background: #FBBE4B;
-        opacity: 100;
+        opacity: 1;
     }
 
     75% {
         background: #27D07D;
-        opacity: 100;
+        opacity: 1;
     }
 
     90% {
@@ -106,14 +106,12 @@ body {
 
 .info_container {
     display: flex;
-    position: absolute;
     flex-direction: column;
     /*top: 88vh;*/
     top: 0;
     width: 100vw;
     height: 82vh;
     background-color: #f9f8f3;
-    padding-top: 10vh;
     z-index: 1;
 }
 
@@ -141,8 +139,8 @@ body {
     font-size: 17px;
     text-align: left;
     color: #212322;
-    width: 55vw;
-    margin: 3vh 0;
+    width: 54vw;
+    margin: 3vh 2vw;
 }
 
 .page_details {
@@ -152,8 +150,9 @@ body {
 }
 
 .page_icons {
-    height: 9vh;
-    margin: 1vh 0;
+    height: 80%;
+    width: 80%;
+    margin: auto;
 }
 
 .page_link {
