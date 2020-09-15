@@ -120,40 +120,91 @@
 
      <!-- Home page -->
      <section id="home" class="page">
-          <div class="place-details-on-map">
-               <div class="icon-bottom-container">
-                    <div class="icon-top-container">
-                         <!-- logo icon -->
+          <div id='details-going-up'>
+               <div class="place-details-on-map">
+                    <div class="icon-bottom-container">
+                         <div class="icon-top-container">
+                              <!-- logo icon -->
+                         </div>
                     </div>
-               </div>
-               <h1 class="title-white">Here will be title js api</h1>
-               <p class="subtitle-white">adress js api</p>
-               <p class="subtitle-bold-white">This place is too crowded</p>
-               <a href='details' class="arrow-position">
+                    <h1 class="title-white">Here will be title js api</h1>
+                    <p class="subtitle-white">adress js api</p>
+                    <p class="subtitle-bold-white">This place is too crowded</p>
                     <img class="arrow-up" src="media/Icon ionic-ios-arrow-back.png">
-               </a>
-          </div>
-          <div class='place-details' id='details'>
-               <div class="green-bar">
-                    <a href='details' class="arrow-position">
-                         <img class="arrow-back" src="media/Icon ionic-ios-arrow-back.png">
-                    </a>
-                    <h1 class="bar-logo">SafeToGo</h1>
+
                </div>
-               <h1 class="title-details">title js api</h1>
-               <p class="subtitle-details">adress js api</p>
-               <p class="should-i-go">Should I go?</p>
-               <div class="gradient-bar">
-                    <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
-                    <img src="media/Icon material-location-on.png">
-                    <img src="media/ios-close-circle-outline.png">
+               <div class='place-details' id='details'>
+                    <div class="green-bar">
+
+                         <img class="arrow-back" src="media/Icon ionic-ios-arrow-back.png">
+
+                         <h1 class="bar-logo">SafeToGo</h1>
+                    </div>
+                    <h1 class="title-details">title js api</h1>
+                    <p class="subtitle-details">adress js api</p>
+                    <p class="should-i-go">Should I go?</p>
+                    <div class="gradient-bar">
+                         <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
+                         <img src="media/Icon material-location-on.png">
+                         <img src="media/ios-close-circle-outline.png">
+                    </div>
+                    <p class="should-i-go">Crowdedness during opening hours</p>
+                    <div class="graph-wrapper">
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">8 am</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">10 am</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">12 am</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">2 pm</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">4 pm</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">6 pm</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">8 pm</p>
+                         </div>
+
+                    </div>
+
+                    <div class="toggles-wrapper">
+                         <div class="toggles-container">
+                              <img class="toggles-icon" src="media/md-notifications.png">
+                              <p class="toggles-text">Notify me when <br>
+                                   it's safe to go</p>
+                              <div class="toggle-btn">
+                                   <div class="toggle-btn-center"></div>
+                              </div>
+                         </div>
+                         <div class="toggles-container">
+                              <img class="toggles-icon" src="media/favorite.png">
+                              <p class="toggles-text">Add to favourites</p>
+                              <div class="toggle-btn">
+                                   <div class="toggle-btn-center"></div>
+                              </div>
+                         </div>
+                    </div>
                </div>
           </div>
      </section> <!-- Favourites page -->
      <section id="favourites" class="page">
           <div class="green-bar">
-               <a href='details' class="arrow-position">
-                    <img class="arrow-back" src="media/Icon ionic-ios-arrow-back.png">
+               <a href='details' class="arrow-position"></a>
+               <img class="arrow-back" src="media/Icon ionic-ios-arrow-back.png">
                </a>
                <h1 class="bar-logo">SafeToGo</h1>
           </div>
