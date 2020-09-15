@@ -166,8 +166,14 @@ body {
 #details-going-up {
     position: absolute;
     top: calc(100vh - 100px - 40vh);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100vw;
 
-    overflow: hidden;
+
+
 }
 
 /*colorful container*/
@@ -178,11 +184,11 @@ body {
     filter: drop-shadow(0px -1px 10px rgba(0, 0, 0, 0.16));
     border-radius: 15% 15% 0 0;
     display: flex;
-    position: absolute;
+
     flex-direction: column;
     justify-content: flex-end;
     /*bottom: 18vh;*/
-    z-index: 90;
+
     scroll-behavior: smooth;
 }
 
@@ -194,7 +200,7 @@ body {
     border-radius: 50%;
     top: -60px;
     left: calc(50vw - 60px);
-    z-index: 91;
+
 
 }
 
@@ -217,7 +223,7 @@ body {
     font-family: "Josefin Sans";
     font-weight: bold;
     font-size: 30px;
-    text-align: left;
+    text-align: center;
     color: #f9f8f3;
     text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.16);
     margin: 15vh auto 1vh auto;
@@ -260,18 +266,19 @@ body {
 /*full screen details*/
 .place-details {
     display: flex;
-    position: absolute;
+
     flex-direction: column;
     justify-content: space-around;
     /*top: 88vh;*/
 
-    z-index: 90;
+
     width: 100vw;
-    height: calc(100vh - 100px);
+    height: 100vh;
     background-color: #f9f8f3;
-    padding-top: 10vh;
+
     overflow-y: scroll;
     scroll-behavior: smooth;
+    padding-bottom: 100px;
 
 }
 
@@ -280,23 +287,19 @@ body {
     height: 70px;
     background: #27d07d;
     display: flex;
-    position: absolute;
     top: 0;
     left: 0;
     z-index: 5;
 
 }
 
-.green-bar a {
-    display: flex;
-    justify-self: flex-start;
-    margin: 25px auto 25px 20px;
-
-}
 
 .arrow-back {
     height: 20px;
     transform: rotate(-90deg);
+    display: flex;
+    justify-self: flex-start;
+    margin: 25px auto 25px 20px;
 
 }
 
@@ -304,12 +307,12 @@ body {
     font-family: "Freestyle Script";
     font-weight: normal;
     font-size: 35px;
-    width: 100vw;
+    width: 40vw;
     text-align: center;
     color: #f9f8f3;
-    margin: auto;
-    position: absolute;
-    top: 17.5px;
+    margin: auto 30vw auto auto;
+
+
 
 
 }
