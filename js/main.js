@@ -8,9 +8,6 @@ window.addEventListener("load", function () {
 });
 
 
-<<<<<<< HEAD
-
-=======
 // Single page application content //
 
 
@@ -40,7 +37,6 @@ function bm() {
 
     });
 }
->>>>>>> 1f843613c901942db2998b163b6d73775e77e925
 // Onboarding mechanic
 
 const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");

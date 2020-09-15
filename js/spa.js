@@ -34,7 +34,7 @@ function navigateTo(pageId) {
 
 // Sets default page //
 function pageChange() {
-    let page = "onboarding";
+    let page = "home";
     if (location.hash) {
         page = location.hash.slice(1);
     }
