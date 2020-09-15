@@ -8,3 +8,22 @@ window.addEventListener("load", function () {
 });
 
 // Single page application content //
+
+
+//opening details after clicking on map
+//opening details of the place after clicking on arrow up
+
+
+
+function goDetails() {
+    document.getElementsByClassName("arrow-up").addEventListener("click", function () {
+        document.getElementById("details-going-up").setAttribute = ('top', '-40vh');
+    });
+};
+
+function goMap() {
+    document.getElementsByClassName("arrow-back").addEventListener("click", function () {
+        document.getElementById("details-going-up").setAttribute = ('top', 'calc(100vh - 100px - 40vh)');
+
+    });
+}
