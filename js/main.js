@@ -19,10 +19,11 @@ for (let i = 0; i < 4; i++) {
         onBoardingContainers[i].style.display = "none";
     })
 }
-
-onBoardingSkip[0].addEventListener('click', () => {
-    for (let i = 0; i < 4; i++) {
-        onBoardingContainers[i].style.display = "none";
-    }
-})
+for (let j = 0; j < 4; j++) {
+    onBoardingSkip[j].addEventListener('click', () => {
+        for (let i = 0; i < 4; i++) {
+            onBoardingContainers[i].style.display = "none";
+        }
+    })
+}
 // Single page application content //
