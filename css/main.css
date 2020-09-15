@@ -18,6 +18,7 @@ body {
 }
 
 /* Tabbar */
+
 .tabbar {
     background-color: #F9F8F3;
     position: fixed;
@@ -99,8 +100,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
-=======
 /* Info screen */
 
 .info_container {
@@ -350,7 +349,6 @@ body {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
->>>>>>> 350011a52eb6f4e5ce9e7c56bb4b957b876eb83f
 
 /* Page styling */
 .page {
