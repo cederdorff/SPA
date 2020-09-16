@@ -23,7 +23,7 @@ function goMap() {
 
 //toggle button
 // source: https: //www.w3schools.com/howto/howto_js_toggle_hide_show.asp
-/*
+
 function toggleNotifications() {
     var x = document.getElementById("toggleBtn1");
     var y = document.getElementById("toggleBG1");
@@ -38,7 +38,7 @@ function toggleNotifications() {
 
 function toggleFav() {
     var x = document.getElementById("toggleBtn2");
-    var y = document.getElementById("toggleBG1");
+    var y = document.getElementById("toggleBG2");
     if (x.style.margin === "5px auto 5px 5px") {
         x.style.margin = "5px 5px 5px auto"
         y.style.background = "#27d07d";
@@ -47,7 +47,7 @@ function toggleFav() {
         y.style.background = "#ff5959";
     }
 
-*/
+}
 // Onboarding mechanic
 
 const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
