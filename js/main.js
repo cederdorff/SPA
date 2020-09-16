@@ -21,25 +21,50 @@ function goMap() {
     document.getElementById('details-going-up').style.top = 'calc(100vh - 100px - 40vh)';
 }
 
+//toggle button
+// source: https: //www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
-
-// Onboarding mechanic
-
-const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
-const onBoardingSkip = document.querySelectorAll("#onboarding .top_part .skip");
-const onBoardingContainers = document.querySelectorAll("#onboarding > div");
-
-
-for (let i = 0; i < 4; i++) {
-    onBoardingButtons[i].addEventListener('click', () => {
-        onBoardingContainers[i].style.display = "none";
-    })
+function toggleNotifications() {
+    var x = document.getElementById("toggleBtn1");
+    var y = document.getElementById("toggleBG1");
+    if (x.style.margin === "5px auto 5px 5px") {
+        x.style.margin = "5px 5px 5px auto"
+        y.style.background = "#27d07d";
+    } else {
+        x.style.margin = "5px auto 5px 5px";
+        y.style.background = "#ff5959";
+    }
 }
-for (let j = 0; j < 4; j++) {
-    onBoardingSkip[j].addEventListener('click', () => {
-        for (let i = 0; i < 4; i++) {
+
+function toggleNotifications() {
+    var x = document.getElementById("toggleBtn2");
+    var y = document.getElementById("toggleBG1");
+    if (x.style.margin === "5px auto 5px 5px") {
+        x.style.margin = "5px 5px 5px auto"
+        y.style.background = "#27d07d";
+    } else {
+        x.style.margin = "5px auto 5px 5px";
+        y.style.background = "#ff5959";
+    }
+
+
+    // Onboarding mechanic
+
+    const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
+    const onBoardingSkip = document.querySelectorAll("#onboarding .top_part .skip");
+    const onBoardingContainers = document.querySelectorAll("#onboarding > div");
+
+
+    for (let i = 0; i < 4; i++) {
+        onBoardingButtons[i].addEventListener('click', () => {
             onBoardingContainers[i].style.display = "none";
-        }
-    })
-}
-// Single page application content //
+        })
+    }
+    for (let j = 0; j < 4; j++) {
+        onBoardingSkip[j].addEventListener('click', () => {
+            for (let i = 0; i < 4; i++) {
+                onBoardingContainers[i].style.display = "none";
+            }
+        })
+    }
+    // Single page application content //
