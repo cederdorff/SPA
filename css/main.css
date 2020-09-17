@@ -102,7 +102,8 @@ body {
     }
 }
 
-/*home screen - place details*/
+/* Home screen - place details */
+
 #details-going-up {
     position: absolute;
     top: calc(100vh - 100px - 40vh);
@@ -118,7 +119,7 @@ body {
 
 }
 
-/*colorful container*/
+/* Colorful container */
 .place-details-on-map {
     width: 100vw;
     height: 40vh;
@@ -207,7 +208,7 @@ body {
 
 }
 
-/*full screen details*/
+/* Full screen details */
 .place-details {
     display: flex;
 
@@ -348,7 +349,7 @@ body {
 
 }
 
-/*toggle buttons container*/
+/* Toggle buttons container */
 .toggles-wrapper {
     display: flex;
     flex-direction: column;
@@ -405,6 +406,7 @@ body {
 @media only screen and (max-width: 600px) {}
 
 /* Page styling */
+
 .page {
     display: none;
     animation: fadeIn 0.4s;
