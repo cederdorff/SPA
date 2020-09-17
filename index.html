@@ -12,6 +12,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://use.typekit.net/dcn1ymp.css">
      <link rel="stylesheet" href="Sass/main.css">
+     <script src="https://kit.fontawesome.com/d4d9665ced.js" crossorigin="anonymous"></script>
 </head>
 
 <body onhashchange="pageChange()">
@@ -136,69 +137,70 @@
                <p class="subtitle-bold-white">This place is too crowded</p>
                <img class="arrow-up" onclick="goDetails()" src="media/Icon ionic-ios-arrow-back.png">
 
-          </div>
-          <div class='place-details' id='details'>
-               <div class="green-bar">
 
-                    <img class="arrow-back" onclick="goMap()" src="media/Icon ionic-ios-arrow-back.png">
+               <div class='place-details' id='details'>
+                    <div class="green-bar">
 
-                    <h1 class="bar-logo">SafeToGo</h1>
-               </div>
-               <h1 class="title-details">title js api</h1>
-               <p class="subtitle-details">adress js api</p>
-               <p class="should-i-go">Should I go?</p>
-               <div class="gradient-bar">
-                    <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
-                    <img src="media/Icon material-location-on.png">
-                    <img src="media/ios-close-circle-outline.png">
-               </div>
-               <p class="should-i-go">Crowdedness during opening hours</p>
-               <div class="graph-wrapper">
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">8 am</p>
-                    </div>
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">10 am</p>
-                    </div>
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">12 am</p>
-                    </div>
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">2 pm</p>
-                    </div>
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">4 pm</p>
-                    </div>
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">6 pm</p>
-                    </div>
-                    <div class="graph-container">
-                         <div class="graph-column"></div>
-                         <p class="graph-text">8 pm</p>
-                    </div>
+                         <img class="arrow-back" onclick="goMap()" src="media/Icon ionic-ios-arrow-back.png">
 
-               </div>
-
-               <div class="toggles-wrapper">
-                    <div class="toggles-container">
-                         <img class="toggles-icon" src="media/md-notifications.png">
-                         <p class="toggles-text">Notify me when <br>
-                              it's safe to go</p>
-                         <div class="toggle-btn" id="toggleBG1" onclick="toggleNotifications()">
-                              <div class="toggle-btn-center" id="toggleBtn1"></div>
+                         <h1 class="bar-logo">SafeToGo</h1>
+                    </div>
+                    <h1 class="title-details">title js api</h1>
+                    <p class="subtitle-details">adress js api</p>
+                    <p class="should-i-go">Should I go?</p>
+                    <div class="gradient-bar">
+                         <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
+                         <img src="media/Icon material-location-on.png">
+                         <img src="media/ios-close-circle-outline.png">
+                    </div>
+                    <p class="should-i-go">Crowdedness during opening hours</p>
+                    <div class="graph-wrapper">
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">8 am</p>
                          </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">10 am</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">12 am</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">2 pm</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">4 pm</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">6 pm</p>
+                         </div>
+                         <div class="graph-container">
+                              <div class="graph-column"></div>
+                              <p class="graph-text">8 pm</p>
+                         </div>
+
                     </div>
-                    <div class="toggles-container">
-                         <img class="toggles-icon" src="media/favorite.png">
-                         <p class="toggles-text">Add to favourites</p>
-                         <div class="toggle-btn" id="toggleBG2" onclick="toggleFav()">
-                              <div class="toggle-btn-center" id="toggleBtn2"></div>
+
+                    <div class="toggles-wrapper">
+                         <div class="toggles-container">
+                              <img class="toggles-icon" src="media/md-notifications.png">
+                              <p class="toggles-text">Notify me when <br>
+                                   it's safe to go</p>
+                              <div class="toggle-btn" id="toggleBG1" onclick="toggleNotifications()">
+                                   <div class="toggle-btn-center" id="toggleBtn1"></div>
+                              </div>
+                         </div>
+                         <div class="toggles-container">
+                              <img class="toggles-icon" src="media/favorite.png">
+                              <p class="toggles-text">Add to favourites</p>
+                              <div class="toggle-btn" id="toggleBG2" onclick="toggleFav()">
+                                   <div class="toggle-btn-center" id="toggleBtn2"></div>
+                              </div>
                          </div>
                     </div>
                </div>
