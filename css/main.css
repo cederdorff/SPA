@@ -102,7 +102,8 @@ body {
     }
 }
 
-/*home screen - place details*/
+/* Home screen - place details */
+
 #details-going-up {
     position: absolute;
     top: calc(100vh - 100px - 40vh);
@@ -118,7 +119,7 @@ body {
 
 }
 
-/*colorful container*/
+/* Colorful container */
 .place-details-on-map {
     width: 100vw;
     height: 40vh;
@@ -201,7 +202,7 @@ body {
 
 }
 
-/*full screen details*/
+/* Full screen details */
 .place-details {
     display: flex;
 
@@ -213,11 +214,9 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #f9f8f3;
-
     overflow-y: scroll;
     scroll-behavior: smooth;
     padding-bottom: 100px;
-
 }
 
 .green-bar {
@@ -261,9 +260,7 @@ body {
     font-size: 30px;
     text-align: center;
     color: #212322;
-    margin: 10px auto 10px auto;
-
-
+    margin: 5vh 10vw 0;
 }
 
 .subtitle-details {
@@ -282,13 +279,13 @@ body {
     font-size: 17px;
     text-align: left;
     color: #212322;
-    margin: 3vh auto 2vh 3vh;
+    margin: 3vh 10vw 2vh 10vw;
 }
 
 .gradient-bar {
     display: flex;
-    margin: 0 auto 2vh auto;
-    width: 90vw;
+    margin: 0 10vw 2vh 10vw;
+    width: 80vw;
     height: 5vh;
     border-radius: 5px;
     background: linear-gradient(90deg, #27d07d 0%, #8dda77 24.09%, #fbe570 50%, #fca56b 75.31%, #fd6767 100%);
@@ -321,7 +318,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 3px;
+    margin: 2.5px;
     width: 40px;
     align-items: center;
 }
@@ -330,7 +327,7 @@ body {
     width: 30px;
     background-color: violet;
     height: 100px;
-    margin-bottom: 3px;
+    margin: 0 10vw 0.8vh;
 }
 
 .graph-text {
@@ -342,11 +339,11 @@ body {
 
 }
 
-/*toggle buttons container*/
+/* Toggle buttons container */
 .toggles-wrapper {
     display: flex;
     flex-direction: column;
-    margin: 3vh 5vw 0 5vw;
+    margin: 3vh 10vw 0 10vw;
 
 }
 
@@ -354,7 +351,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 2vh;
+    margin: 2vh 0;
 
 }
 
@@ -393,119 +390,13 @@ body {
 
 
 
-/* Favourites screen */
 
-#favourites {}
-
-
-.fav {
-    font-family: "Josefin Sans";
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    color: #212322;
-    margin: 5vh auto 4vh auto
-}
-
-.btn-group .button {
-    font-family: "Century Gothic";
-    font-weight: normal;
-    font-size: 19px;
-    text-align: center;
-    padding: 7px;
-    background-color: #F9F8F3;
-    border-radius: 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    border: 1px solid #c9c9c9;
-    text-decoration: none;
-    width: 40vw;
-    opacity: 1;
-    justify-content: space-around;
-}
-
-.btn-group {
-    margin: 0 10vw;
-}
-
-.filter {
-    background-color: #F9F8F3;
-    border: none;
-    font-family: "Century Gothic";
-    font-size: 19px;
-    float: right;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    padding: 10px;
-}
-
-.btn-group .button:hover {
-    opacity: 0.8;
-    background-color: #bbbaba;
-    color: rgb(255, 255, 255);
-}
-
-.places {
-    width: 200px;
-    font-family: "Josefin Sans";
-}
-
-.place {
-    margin-left: 20px;
-}
-
-.street {
-    margin-left: 20px;
-    font-family: 'Century Gothic';
-}
-
-.yellow {
-    margin: 2vh 5vh 2vh;
-    width: 10px;
-    background-color: yellow;
-}
-
-.red {
-    margin: 2vh 5vh 2vh;
-    width: 10px;
-    background-color: rgb(255, 17, 0);
-}
-
-.green {
-    margin: 2vh 5vh 2vh;
-    width: 10px;
-    background-color: rgb(0, 196, 33);
-}
-
-.supermarket-button {
-    font-family: "Century Gothic";
-    font-weight: normal;
-    font-size: 19px;
-    text-align: center;
-    padding: 7px;
-    background-color: #F9F8F3;
-    border-radius: 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    border: 1px solid #c9c9c9;
-    text-decoration: none;
-    width: 40vw;
-    opacity: 1;
-    justify-content: space-around;
-    margin: 0 10vw;
-
-}
-
-.supermarket-button:hover {
-    opacity: 0.8;
-    background-color: #bbbaba;
-    color: rgb(255, 255, 255);
-}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}
 
 /* Page styling */
+
 .page {
     display: none;
     animation: fadeIn 0.4s;
