@@ -8,7 +8,7 @@
     font-size: 30px;
     text-align: center;
     color: #212322;
-    margin: 5vh auto 4vh auto
+    margin: 5vh auto 3vh auto
 }
 
 .button {
@@ -17,7 +17,7 @@
     font-size: 19px;
     text-align: center;
     padding: 7px;
-    margin: 1vh 10vw;
+    margin: 2vh 10vw 1vh;
     background-color: #F9F8F3;
     border-radius: 5px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -38,11 +38,10 @@
     font-family: "Century Gothic";
     font-size: 19px;
     float: right;
-    margin: auto;
+    margin: 22px 0;
     display: flex;
     flex-direction: row;
     justify-content: baseline;
-    padding: 10px;
 }
 
 .btn-group .button:hover {
@@ -66,19 +65,19 @@
 }
 
 .yellow {
-    margin: 3vh 10vw 3vh;
+    margin: 2vh 10vw 2vh;
     width: 10px;
     background-color: #FBBE4B;
 }
 
 .red {
-    margin: 3vh 10vw 3vh;
+    margin: 2vh 10vw 2vh;
     width: 10px;
     background-color: #ff5959;
 }
 
 .green {
-    margin: 3vh 10vw 3vh;
+    margin: 2vh 10vw 2vh;
     width: 10px;
     background-color: #27D07D;
 }

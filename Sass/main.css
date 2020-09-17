@@ -64,6 +64,7 @@
   height: 220px;
   text-align: center;
   padding: 30px 0;
+  line-height: 25px;
 }
 
 #onboarding>div>button {
