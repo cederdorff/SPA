@@ -21,8 +21,33 @@ function goMap() {
     document.getElementById('details-going-up').style.top = 'calc(100vh - 100px - 40vh)';
 }
 
+//toggle button
+// source: https: //www.w3schools.com/howto/howto_js_toggle_hide_show.asp
 
+function toggleNotifications() {
+    var x = document.getElementById("toggleBtn1");
+    var y = document.getElementById("toggleBG1");
+    if (x.style.margin === "5px auto 5px 5px") {
+        x.style.margin = "5px 5px 5px auto"
+        y.style.background = "#27d07d";
+    } else {
+        x.style.margin = "5px auto 5px 5px";
+        y.style.background = "#ff5959";
+    }
+}
 
+function toggleFav() {
+    var x = document.getElementById("toggleBtn2");
+    var y = document.getElementById("toggleBG2");
+    if (x.style.margin === "5px auto 5px 5px") {
+        x.style.margin = "5px 5px 5px auto"
+        y.style.background = "#27d07d";
+    } else {
+        x.style.margin = "5px auto 5px 5px";
+        y.style.background = "#ff5959";
+    }
+
+}
 // Onboarding mechanic
 
 const onBoardingButtons = document.querySelectorAll("#onboarding > div > button.next");
@@ -41,5 +66,5 @@ for (let j = 0; j < 4; j++) {
             onBoardingContainers[i].style.display = "none";
         }
     })
+
 }
-// Single page application content //
