@@ -68,3 +68,25 @@ for (let j = 0; j < 4; j++) {
     })
 
 }
+//changing icons on tabbar functions
+
+function tabChange() {
+    const emptyIcons = document.querySelectorAll('.tabs a img:nth-of-type(2)');
+    const tabs = document.querySelectorAll('.tabs a');
+    tabs[0].addEventListener('click', () => {
+        emptyIcons[0].style.display = 'none';
+        emptyIcons[1].style.display = 'block';
+        emptyIcons[2].style.display = 'block';
+    })
+    tabs[1].addEventListener('click', () => {
+        emptyIcons[1].style.display = 'none';
+        emptyIcons[2].style.display = 'block';
+        emptyIcons[0].style.display = 'block';
+    })
+    tabs[2].addEventListener('click', () => {
+        emptyIcons[2].style.display = 'none';
+        emptyIcons[0].style.display = 'block';
+        emptyIcons[1].style.display = 'block';
+    })
+}
+tabChange();
