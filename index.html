@@ -15,6 +15,17 @@
      <script src="https://kit.fontawesome.com/d4d9665ced.js" crossorigin="anonymous"></script>
      <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
      <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+     <script>
+          // Ignore this in your implementation
+          window.isMbscDemo = true;
+      </script>
+<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+
+<!-- Mobiscroll JS and CSS Includes -->
+<link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+<script src="js/mobiscroll.jquery.min.js"></script>
+
+
 </head>
 
 <body onhashchange="pageChange()">
@@ -226,10 +237,103 @@
                          style="width: 25px; margin-left: 10px;"></button>
           </div>
 
+          <style type="text/css">
+               body {
+                   margin: 0;
+                   padding: 0;
+               }
+           
+               body,
+               html {
+                   height: 100%;
+               }
+           
+               </style>
+           
+           </head>
+           <body>
+           
+           <div mbsc-page class="demo-swipe-actions">
+             <div style="height:100%">
+                 <div mbsc-form>
 
+                   <div class="mbsc-form-group">
+                       <div class="mbsc-form-group-title">Action menu</div>
+                       <ul id="action-menu" class="mbsc-cloak">
+                           <li data-icon="image2">My Image 1</li>
+                           <li data-icon="image2">My Image 2</li>
+                           <li data-icon="image2">My Image 3</li>
+                           <li data-icon="image2">My Image 4</li>
+                           <li data-icon="image2">My Image 5</li>
+                       </ul>
+                   </div>
+               </div>
+             </div>
+           </div>
+           
+           <script>
+           
+               mobiscroll.settings = {
+                   lang: 'en',                // Specify language like: lang: 'pl' or omit setting to use default
+                   theme: 'ios',              // Specify theme like: theme: 'ios' or omit setting to use default
+                       themeVariant: 'light'  // More info about themeVariant: https://docs.mobiscroll.com/4-10-6/listview#opt-themeVariant
+               };
+               
+               $(function () {
+               
+                   // Mobiscroll Listview initialization
+                  
+               
+                   // Mobiscroll Listview initialization
+                   $('#action-menu').mobiscroll().listview({
+                       enhance: true,         // More info about enhance: https://docs.mobiscroll.com/4-10-6/listview#opt-enhance
+                       actions: [{            // More info about actions: https://docs.mobiscroll.com/4-10-6/listview#opt-actions
+                           icon: 'link',
+                           action: function (event, inst) {
+                               mobiscroll.toast({
+                                   
+                                   message: 'Linked'
+                               });
+                           }
+                       }, {
+                           icon: 'star3',
+                           action: function (event, inst) {
+                               mobiscroll.toast({
+                                   
+                                   message: 'Starred'
+                               });
+                           }
+                       }, {
+                           icon: 'download',
+                           action: function (event, inst) {
+                               mobiscroll.toast({
+                                   
+                                   message: 'Downloaded'
+                               });
+                           }
+                       }, {
+                           icon: 'print',
+                           action: function (event, inst) {
+                               mobiscroll.toast({
+                                   
+                                   message: 'Printing...'
+                               });
+                           }
+                       }, {
+                           icon: 'remove',
+                           undo: true,        // More info about undo: https://docs.mobiscroll.com/4-10-6/listview#methods-undo
+                           action: function (event, inst) {
+                               inst.remove(event.target);
+                               return false;
+                           }
+                       }]
+                   });
+               
+               });
+           </script>
           <div class="yellow">
-               <div class="places"> <img src="media/md-notifications.png"
-                         style="width: 20px; margin-left: 20px; float: right; ">
+               <div class="places">
+               <img src="media/md-notifications.png"style="width: 20px; margin-left: 20px; float: right; "> 
                     <h1 class="place">McDonald's</h1>
                     <p class="street">street restaurant</p>
                </div>
@@ -260,6 +364,8 @@
                     <p class="street">street restaurant</p>
                </div>
           </div>
+          
+
      </section>
 
      <!-- SPA functionality -->
@@ -267,6 +373,7 @@
      <!-- Main JS file -->
      <script src="js/main.js"></script>
      <script src="js/api.js"></script>
+
 
 </body>
 
