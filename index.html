@@ -7,12 +7,14 @@
      <title>SPA</title>
      <link rel="stylesheet" href="css/main.css">
      <link rel="stylesheet" href="css/home.css">
-     <link rel="stylesheet" href="css/favourite.css">
      <link rel="stylesheet" href="css/info.css">
+     <link rel="stylesheet" href="css/favourite.css">
      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="https://use.typekit.net/dcn1ymp.css">
      <link rel="stylesheet" href="Sass/main.css">
      <script src="https://kit.fontawesome.com/d4d9665ced.js" crossorigin="anonymous"></script>
+     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+	<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
 <body onhashchange="pageChange()">
@@ -128,13 +130,21 @@
 
      <!-- Home page -->
      <section id="home" class="page">
+<<<<<<< HEAD
           <div id="mapbox">
 
           </div>
+=======
+          <div id="map"></div>
+          
+>>>>>>> 85c9f8632aa8b6402235015d23fdc9b5bd4fe8b2
           <div id='details-going-up'>
                <div class="place-details-on-map">
                     <div class="icon-bottom-container">
                          <img src="media/details-icons/bar.png" class="icon-details">
+                         
+
+		
 
 
                     </div>
@@ -143,7 +153,8 @@
                     <p class="subtitle-bold-white">This place is too crowded</p>
                     <img class="arrow-up" onclick="goDetails()" src="media/Icon ionic-ios-arrow-back.png">
 
-               </div>
+               </div> 
+              
                <div class='place-details' id='details'>
                     <div class="green-bar">
 
@@ -151,6 +162,7 @@
 
                          <h1 class="bar-logo">SafeToGo</h1>
                     </div>
+                    
                     <h1 class="title-details">title js api</h1>
                     <p class="subtitle-details">adress js api</p>
                     <p class="should-i-go">Should I go?</p>
@@ -214,10 +226,51 @@
      </section> <!-- Favourites page -->
      <section id="favourites" class="page">
           <div class="green-bar">
-               <a href='#' class="arrow-position"></a>
+               <a href='details' class="arrow-position"></a>
                <img class="arrow-back" src="media/Icon ionic-ios-arrow-back.png">
                </a>
                <h1 class="bar-logo">SafeToGo</h1>
+          </div>
+          <h1 class="fav">Favourites</h1>
+          <div class="btn-group">
+               <button class="button">Restaurants</button>
+               <button class="filter">Filter<img src="media/filter_icon.png"
+                         style="width: 25px; margin-left: 10px;"></button>
+          </div>
+
+
+          <div class="yellow">
+               <div class="places"> <img src="media/md-notifications.png"
+                         style="width: 20px; margin-left: 20px; float: right; ">
+                    <h1 class="place">McDonald's</h1>
+                    <p class="street">street restaurant</p>
+               </div>
+          </div>
+
+          <div class="red">
+               <div class="places">
+                    <h1 class="place">McDonald's</h1>
+                    <p class="street">street restaurant</p>
+               </div>
+          </div>
+
+
+          <button class="button">Supermarkets</button>
+
+
+          <div class="yellow">
+               <div class="places"> <img src="media/md-notifications.png"
+                         style="width: 20px; margin-left: 20px; float: right; ">
+                    <h1 class="place">Kvickly</h1>
+                    <p class="street">street restaurant</p>
+               </div>
+          </div>
+
+          <div class="green">
+               <div class="places">
+                    <h1 class="place">Fakta</h1>
+                    <p class="street">street restaurant</p>
+               </div>
           </div>
      </section>
 
@@ -225,6 +278,7 @@
      <script src="js/spa.js"></script>
      <!-- Main JS file -->
      <script src="js/main.js"></script>
+     <script src="js/api.js"></script>
 
 </body>
 
