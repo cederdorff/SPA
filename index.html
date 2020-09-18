@@ -13,6 +13,8 @@
      <link rel="stylesheet" href="https://use.typekit.net/dcn1ymp.css">
      <link rel="stylesheet" href="Sass/main.css">
      <script src="https://kit.fontawesome.com/d4d9665ced.js" crossorigin="anonymous"></script>
+     <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+	<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
 </head>
 
 <body onhashchange="pageChange()">
@@ -128,10 +130,15 @@
 
      <!-- Home page -->
      <section id="home" class="page">
+          <div id="map"></div>
+          
           <div id='details-going-up'>
                <div class="place-details-on-map">
                     <div class="icon-bottom-container">
                          <img src="media/details-icons/bar.png" class="icon-details">
+                         
+
+		
 
 
                     </div>
@@ -140,7 +147,8 @@
                     <p class="subtitle-bold-white">This place is too crowded</p>
                     <img class="arrow-up" onclick="goDetails()" src="media/Icon ionic-ios-arrow-back.png">
 
-               </div>
+               </div> 
+              
                <div class='place-details' id='details'>
                     <div class="green-bar">
 
@@ -148,6 +156,7 @@
 
                          <h1 class="bar-logo">SafeToGo</h1>
                     </div>
+                    
                     <h1 class="title-details">title js api</h1>
                     <p class="subtitle-details">adress js api</p>
                     <p class="should-i-go">Should I go?</p>
@@ -267,6 +276,7 @@
      <script src="js/spa.js"></script>
      <!-- Main JS file -->
      <script src="js/main.js"></script>
+     <script src="js/api.js"></script>
 
 </body>
 
