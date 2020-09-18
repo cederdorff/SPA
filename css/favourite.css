@@ -76,6 +76,7 @@
     background-color: #27D07D;
 }
 
+<<<<<<< HEAD
 li {
     padding: 0 !important;
 }
@@ -118,3 +119,6 @@ li .wrapper {
     border-color: #F90101;
 }
 
+=======
+/* Swipe functionality */
+>>>>>>> 8a968934767823f40b0b9517a74744b7a1d9dc53
