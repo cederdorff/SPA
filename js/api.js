@@ -27,4 +27,39 @@
            .addTo(map);
  });
 
- 
+ //BestTimes API code
+ //  var settings = {
+ //       "url": "https://besttime.app/api/v1/keys/pri_0bc6ad2618fe4bb0b9092c84f41b3010",
+ //       "method": "GET"
+ //  };
+
+ //  $.ajax(settings).done(function (response) {
+ //       console.log(response);
+ //  });
+
+
+ var settings = {
+      "url": "https://besttime.app/api/v1/venues",
+      "data": {
+           'api_key_private': 'pri_0bc6ad2618fe4bb0b9092c84f41b3010'
+      },
+      "method": "GET"
+ };
+
+ $.ajax(settings).done(function (response) {
+      console.log(response);
+ });
+
+ var settings = {
+      "url": "https://besttime.app/api/v1/forecasts?api_key_private=pri_0bc6ad2618fe4bb0b9092c84f41b3010&venue_name=ARoS Aarhus Art Museum&venue_address=Aros Allé 2 8000 Aarhus Denmark ",
+      "data": {
+           'api_key_private': 'pri_0bc6ad2618fe4bb0b9092c84f41b3010',
+           'venue_name': 'ARoS Aarhus Art Museum',
+           'venue_address': 'Aros Allé 2 8000 Aarhus Denmark'
+      },
+      "method": "POST"
+ };
+
+ $.ajax(settings).done(function (response) {
+      console.log(response);
+ });
