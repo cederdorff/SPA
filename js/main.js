@@ -68,3 +68,24 @@ for (let j = 0; j < 4; j++) {
     })
 
 }
+
+function iocnChange() {
+    const tabIcons = document.querySelectorAll('.tabs a img:nth-of-type(2)');
+    const tabs = document.querySelectorAll('.tabs a ');
+    tabs[0].addEventListener('click', () => {
+        tabIcons[0].style.display = 'none';
+        tabIcons[1].style.display = 'block';
+        tabIcons[2].style.display = 'block';
+    })
+    tabs[1].addEventListener('click', () => {
+        tabIcons[1].style.display = 'none';
+        tabIcons[2].style.display = 'block';
+        tabIcons[0].style.display = 'block';
+    })
+    tabs[2].addEventListener('click', () => {
+        tabIcons[2].style.display = 'none';
+        tabIcons[1].style.display = 'block';
+        tabIcons[0].style.display = 'block';
+    })
+}
+iocnChange();
