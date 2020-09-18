@@ -8,7 +8,7 @@
     font-size: 30px;
     text-align: center;
     color: #212322;
-    margin: 5vh auto 3vh auto
+    margin: 5vh auto 3vh auto;
 }
 
 .button {
@@ -42,12 +42,6 @@
     display: flex;
     flex-direction: row;
     justify-content: baseline;
-}
-
-.btn-group .button:hover {
-    opacity: 0.8;
-    background-color: #bbbaba;
-    color: rgb(255, 255, 255);
 }
 
 .places {

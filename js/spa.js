@@ -21,10 +21,8 @@ function setActiveTab(pageId) {
     for (let page of pages) {
         if (`#${pageId}` === page.getAttribute("href")) {
             page.classList.add("active");
-            pages.classList.add("active");
         } else {
             page.classList.remove("active");
-            pages.classList.remove("active");
         }
     }
 }
