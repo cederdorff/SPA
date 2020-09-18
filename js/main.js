@@ -89,3 +89,12 @@ function iocnChange() {
     })
 }
 iocnChange();
+
+function processingRoutine() {
+    var swipedElement = document.getElementById(triggerElementID);
+    if (swipeDirection == 'left') {
+        swipedElement.style.left = '20px';
+    } else if (swipeDirection == 'right') {
+        swipedElement.style.left = '0';
+    }
+};
