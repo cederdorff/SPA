@@ -1,0 +1,11 @@
+{
+     "api_key_private": "pri_0bc6ad2618fe4bb0b9092c84f41b3010",
+     "api_key_public": "pub_ce2ea9368ee54bac9ec395bc5ddec7e4",
+     "status": "OK",
+     "active": true,
+     "credits_forecast": 9998,
+     "credits_query": 9993,
+     "valid": true,
+     "restricted_website_public": "*",
+     "restricted_website_private": "*"
+}
