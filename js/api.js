@@ -59,20 +59,21 @@
       },
       "method": "POST"
  };
-
+ //getting data from above venue
  $.ajax(settings).done(function (response) {
       console.log(response);
       let data = response;
       let week = data.analysis;
       for (let i = 0; i <= 6; i++) {
-
            for (let j = 2; j <= 14; j = j + 2) {
+                //getting crowdedness of this place from 8 to 20 every 2 hours j = 2 is truly 8am and j = 14 is 8pm
                 let busyness = week[i].hour_analysis[j].intensity_nr;
                 busyness += 3;
                 console.log(busyness)
                 const charts = document.querySelectorAll("#home .graph-wrapper .graph-column")
                 for (let k = 0; k <= 6; k++) {
                      charts[k].style.height = busyness[k] + "px"
+                     //trying to set a height of each chart using busyness
                 }
            }
       }
