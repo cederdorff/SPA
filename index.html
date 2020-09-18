@@ -15,22 +15,6 @@
      <script src="https://kit.fontawesome.com/d4d9665ced.js" crossorigin="anonymous"></script>
      <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
      <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-     <!-- iPad Setup -->
-     <meta name="viewport" content="minimum-scale=1.0, maximum-scale=1.0,
-     	width=device-width, user-scalable=no">
-     <meta name="apple-mobile-web-app-capable" content="yes">
-     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-     <title>My Swipable Webpage</title>
-
-     <script type="text/javascript">
-          // TOUCH-EVENTS SINGLE-FINGER SWIPE-SENSING JAVASCRIPT
-          // Courtesy of PADILICIOUS.COM and MACOSXAUTOMATION.COM
-
-          var fingerCount = 0;
-          var startX = 0;
-     </script>
 </head>
 
 <body onhashchange="pageChange()">
@@ -228,6 +212,7 @@
                </div>
           </div>
      </section> <!-- Favourites page -->
+
      <section id="favourites" class="page">
           <div class="green-bar">
                <a href='#' class="arrow-position">
@@ -241,15 +226,12 @@
                <button class="filter">Filter<img src="media/filter_icon.png"
                          style="width: 25px; margin-left: 10px;"></button>
           </div>
-
-
-          <div class="yellow" id="swipeBox" ontouchstart=touchStart(event,'swipeBox');ontouchend="touchEnd(event);"
-               ontouchmove="touchMove(event);" ontouchcancel="touchCancel(event);"></div>
-          <div class="places"> <img src="media/md-notifications.png"
-                    style="width: 20px; margin-left: 20px; float: right; ">
-               <h1 class="place">McDonald's</h1>
-               <p class="street">street restaurant</p>
-          </div>
+          <div class="yellow">
+               <div class="places"> <img src="media/md-notifications.png"
+                         style="width: 20px; margin-left: 20px; float: right; ">
+                    <h1 class="place">McDonald's</h1>
+                    <p class="street">street restaurant</p>
+               </div>
           </div>
 
           <div class="red">
@@ -283,6 +265,7 @@
      <script src="js/spa.js"></script>
      <!-- Main JS file -->
      <script src="js/main.js"></script>
+     <!-- API functionality -->
      <script src="js/api.js"></script>
 
 </body>
