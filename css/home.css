@@ -27,6 +27,7 @@
     justify-content: flex-end;
     /*bottom: 18vh;*/
     scroll-behavior: smooth;
+    z-index: 1000;
 }
 
 .icon-bottom-container {
@@ -281,4 +282,13 @@
     filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.16));
     border-radius: 50%;
     margin: 5px auto 5px 5px;
+}
+
+/* Map */
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 100px;
+    width: 100%;
 }
