@@ -77,6 +77,28 @@
 }
 
 .swipeout-content.item-content {
-background-color: none;
+    background-color: #f9f8f3
 
+}
+
+.item-inner{
+    background-color: #f9f8f3
+    margin-right: -200px;
+}
+
+#favourites.page{
+    background-color: #f9f8f3;
+    border: none;
+}
+
+.item-title {
+    margin-right: -200px;
+}
+
+.container-swipe {
+    margin-right: -200px;  
+    background-color: #f9f8f3;
+    border: none;
+    font-family: "Josefin Sans";
+    margin-right: -200px;
 }
