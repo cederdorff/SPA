@@ -1,8 +1,8 @@
 /* Home screen - place details */
 
 #details-going-up {
-    position: absolute;
-    top: calc(100vh - 100px - 40vh);
+    position: fixed;
+    top: 140vh;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,10 @@
     width: 100vw;
     overflow: visible (default);
     scroll-behavior: smooth;
+
+    /*top: 140vh to hide window, 
+    top: calc(100vh - 100px - 40vh) to show red/green/yellow container
+    top: -40vh to show container with graphs and toggles*/
 
 
 
@@ -208,6 +212,7 @@
 .graph-wrapper {
     display: flex;
     margin: 0 auto 0 auto;
+    justify-content: flex-end;
 }
 
 .graph-container {
@@ -223,7 +228,7 @@
     width: 30px;
     background-color: violet;
     height: 100px;
-    margin: 0 10vw 0.8vh;
+    margin: auto 10vw 0.8vh;
 }
 
 .graph-text {
