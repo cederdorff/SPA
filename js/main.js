@@ -1,4 +1,4 @@
-// Splash screen - https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode //
+// Splash screen - source: https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode //
 window.addEventListener("load", function () {
     const splash = document.querySelector(".splash");
     splash.className += " hidden";
@@ -89,3 +89,22 @@ function iocnChange() {
     })
 }
 iocnChange();
+
+// Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex//
+document.querySelector("ul").addEventListener("click", e => {
+    const li = e.target.closest("li");
+    const btn = e.target.closest("button");
+    if (li && li.scrollLeft === 0) {
+        li.scrollBy({
+            left: 1,
+            behavior: "smooth"
+        });
+    } else if (!btn && li) {
+        li.scrollBy({
+            left: -1,
+            behavior: "smooth"
+        });
+    } else if (btn && li) {
+        li.remove();
+    }
+});
