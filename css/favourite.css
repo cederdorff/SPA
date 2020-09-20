@@ -1,7 +1,5 @@
 /* Favourites screen */
 
-
-
 .fav {
     font-family: "Josefin Sans";
     font-weight: bold;
@@ -9,6 +7,10 @@
     text-align: center;
     color: #212322;
     margin: 5vh auto 3vh auto;
+}
+
+#favourites {
+    margin: 0 0 30vw;
 }
 
 .button {
@@ -44,39 +46,41 @@
     justify-content: baseline;
 }
 
+/* Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex */
+
 .street {
     font-family: 'Century Gothic';
     font-size: 17px;
-
+    margin: 1vh 0;
 }
 
 .place {
-    font-size: 28px;
+    font-size: 30px;
     width: 45vw;
 }
 
-.fav_text {
-    display: flex;
-    flex-direction: column;
-    margin: auto 15vw;
-    padding: 0 5vw;
-    border-left: 10px solid #FBBE4B;
-}
-
-.fav_text1 {
+.yellow {
     display: flex;
     flex-direction: column;
     margin: auto 17vw;
-    padding: 0 5vw;
-    border-left: 10px solid #27D07D;
+    padding: 0 2vw;
+    border-left: 15px solid #FBBE4B;
 }
 
-.fav_text2 {
+.green {
     display: flex;
     flex-direction: column;
     margin: auto 17vw;
-    padding: 0 5vw;
-    border-left: 10px solid #FF5959;
+    padding: 0 2vw;
+    border-left: 15px solid #27D07D;
+}
+
+.red {
+    display: flex;
+    flex-direction: column;
+    margin: auto 17vw;
+    padding: 0 2vw;
+    border-left: 15px solid #FF5959;
 }
 
 .fav_img {
@@ -88,7 +92,7 @@ ul {
     overflow: hidden;
     list-style: none;
     padding: 0;
-    margin: 2vh 10vw;
+    margin: 1vh 10vw 2vh;
 }
 
 li {
@@ -100,6 +104,7 @@ li {
     font-family: "Josefin Sans";
     height: 10vh;
     padding: 7px 0;
+    margin: 1vh 0;
 }
 
 li::-webkit-scrollbar {
@@ -121,7 +126,7 @@ li button:first-of-type {
     margin: 0 0 0 11vw;
 }
 
-li span {
+li {
     flex: 2 0 100%;
     padding: 0.5rem;
 }
