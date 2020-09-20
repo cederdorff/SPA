@@ -55,7 +55,11 @@
                <p>SafeToGo is your way of seeing how crowded any store, restaurant or public space is. Our goal is to
                     help you feel safe amongst other people while minimizing the spread of the corona virus.</p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_1.png" alt="progress dots">
+               <img src="media/onboarding_progress_1.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
           <div>
                <div class="top_part">
@@ -63,13 +67,17 @@
                     <p class="skip">SKIP</p>
                </div>
                <img src="media/map_icon.png" alt="">
-               <h3>Turn on your location</h3>
+               <h3>Turn on your Location</h3>
                <p>Before you begin make sure you have enabled Location Services either when it pops up or in your
                     settings. <br><br>
 
                     Settings > Privacy > Location > SafeToGo > Allow location access </p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_2.png" alt="progress dots">
+               <img src="media/onboarding_progress_2.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
           <div>
                <div class="top_part">
@@ -77,11 +85,15 @@
                     <p class="skip">SKIP</p>
                </div>
                <img src="media/map_pin_icon.png" alt="">
-               <h3>Find a specific public place</h3>
+               <h3>Find a Specific Public Place</h3>
                <p>When you first enter you will see a overview of all the public places near your current location.
                     Simply click on your chosen place and see the crowdedness status of this location.</p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_3.png" alt="progress dots">
+               <img src="media/onboarding_progress_3.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
           <div>
                <div class="top_part">
@@ -89,11 +101,15 @@
                     <p class="skip">SKIP</p>
                </div>
                <img src="media/heart_icon.png" alt="">
-               <h3>Save a location for later</h3>
+               <h3>Save a Location for Later</h3>
                <p>If you want to save a location for later, just click on the favourite button. This way you will have
                     easy access to all you favorite locations. </p>
                <button class="next">Get Started</button>
-               <img src="media/onboarding_progress_4.png" alt="progress dots">
+               <img src="media/onboarding_progress_4.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
      </section>
 
@@ -157,7 +173,6 @@
                     <p class="should-i-go">Should I go?</p>
                     <div class="gradient-bar">
                          <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
-                         <!-- <div class="location-icon-container"> </div> -->
                          <img id='location-icon' class='loc-icon' src="media/Icon material-location-on.png">
                          <img src="media/ios-close-circle-outline.png">
                     </div>
@@ -227,11 +242,11 @@
                <button class="filter">Filter<img src="media/filter_icon.png"
                          style="width: 25px; margin-left: 10px;"></button>
           </div>
-
+          <!-- Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex -->
           <section>
                <ul>
                     <li>
-                         <div class="fav_text">
+                         <div class="yellow">
                               <h1 class="place">store name</h1>
                               <p class="street">street</p>
                          </div>
@@ -240,7 +255,7 @@
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                     <li>
-                         <div class="fav_text1">
+                         <div class="green">
                               <h1 class="place">store name</h1>
                               <p class="street">street</p>
                          </div>
@@ -248,10 +263,10 @@
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                </ul>
-               <button class="button">Supermarkets</button>
+               <button class="button">Shops</button>
                <ul>
                     <li>
-                         <div class="fav_text">
+                         <div class="red">
                               <h1 class="place">store name</h1>
                               <p class="street">street</p>
                          </div>
@@ -260,7 +275,7 @@
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                     <li>
-                         <div class="fav_text2">
+                         <div class="yellow">
                               <h1 class="place">store name</h1>
                               <p class="street">street</p>
                          </div>
@@ -268,6 +283,10 @@
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                </ul>
+               <button class="button">Bars</button>
+               <button class="button">Gyms</button>
+               <button class="button">Museums</button>
+               <button class="button">Theatres</button>
           </section>
      </section>
 
