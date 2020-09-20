@@ -72,6 +72,7 @@ for (let j = 0; j < 4; j++) {
 function iocnChange() {
     const tabIcons = document.querySelectorAll('.tabs a img:nth-of-type(2)');
     const tabs = document.querySelectorAll('.tabs a ');
+    tabIcons[1].style.display = 'none';
     tabs[0].addEventListener('click', () => {
         tabIcons[0].style.display = 'none';
         tabIcons[1].style.display = 'block';
