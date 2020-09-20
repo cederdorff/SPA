@@ -100,23 +100,59 @@
       console.log(response);
       let data = response;
       let week = data.analysis;
-      let busyness = [];
+
       //  for (let i = 0; i <= 6; i++) {
       //       for (let j = 2; j <= 14; j = j + 2) {
       //            //getting crowdedness of this place from 8 to 20 every 2 hours j = 2 is truly 8am and j = 14 is 8pm
       //            busyness.push(week[i].hour_analysis[j].intensity_nr);
       //            //  week[i].hour_analysis[j].intensity_nr;
       //            console.log(busyness)
-      //            const charts = document.querySelectorAll("#home .graph-wrapper .graph-column");
+      //          
       //            for (let k = 0; k <= 6; k++) {
       //                 charts[k].style.height = busyness[k] + "px"
       //                 //trying to set a height of each chart using busyness
       //            }
       //       }
       //  }
-      //  var today = new Date();
-      //  var Day = today.getDay();
-      //  console.log(Day);
+      var date = new Date();
+      var Day = date.getDay();
+      if (Day == 0) {
+           Day = 6;
+      } else {
+           Day = Day - 1;
+      }
+      console.log(Day);
+      var busyness = [];
+      busyness.push(week[Day].hour_analysis[2].intensity_nr + 3);
+      busyness.push(week[Day].hour_analysis[4].intensity_nr + 3);
+      busyness.push(week[Day].hour_analysis[6].intensity_nr + 3);
+      busyness.push(week[Day].hour_analysis[8].intensity_nr + 3);
+      busyness.push(week[Day].hour_analysis[10].intensity_nr + 3);
+      busyness.push(week[Day].hour_analysis[12].intensity_nr + 3);
+      busyness.push(week[Day].hour_analysis[14].intensity_nr + 3);
 
+      console.log(busyness);
+      const charts = document.querySelectorAll("#home .graph-wrapper .graph-column");
+      for (let j = 0; j <= 6; j++) {
+           if (busyness[j] === "9993" || busyness[j] === "N/A3") {
+                busyness[j] = 0;
+                charts[j].style.height = busyness[j];
+           } else {
+                charts[j].style.height = busyness[j] * 20 + "px";
+                if (busyness[j] == 5) {
+                     charts[j].style.backgroundColor = '#ff5959';
+                }
+                if (busyness[j] == 4) {
+                     charts[j].style.backgroundColor = '#fd9964';
+                }
+                if (busyness[j] == 3) {
+                     charts[j].style.backgroundColor = ' #fbe570';
+
+                }
+                if (busyness[j] < 3) {
+                     charts[j].style.backgroundColor = '#27d07d';
+                }
+           }
+      }
 
  });
