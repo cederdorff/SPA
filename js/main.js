@@ -28,7 +28,7 @@ function toggleNotifications() {
     var x = document.getElementById("toggleBtn1");
     var y = document.getElementById("toggleBG1");
     if (x.style.margin === "5px auto 5px 5px") {
-        x.style.margin = "5px 5px 5px auto"
+        x.style.margin = "5px 5px 5px auto";
         y.style.background = "#27d07d";
     } else {
         x.style.margin = "5px auto 5px 5px";
@@ -40,7 +40,7 @@ function toggleFav() {
     var x = document.getElementById("toggleBtn2");
     var y = document.getElementById("toggleBG2");
     if (x.style.margin === "5px auto 5px 5px") {
-        x.style.margin = "5px 5px 5px auto"
+        x.style.margin = "5px 5px 5px auto";
         y.style.background = "#27d07d";
     } else {
         x.style.margin = "5px auto 5px 5px";

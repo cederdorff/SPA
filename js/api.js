@@ -27,31 +27,11 @@
            .addTo(map);
  });
 
- //BestTimes API code
- //  var settings = {
- //       "url": "https://besttime.app/api/v1/keys/pri_0bc6ad2618fe4bb0b9092c84f41b3010",
- //       "method": "GET"
- //  };
 
- //  $.ajax(settings).done(function (response) {
- //       console.log(response);
- //  });
-
-
+ //source of live forecast api
  var settings = {
-      "url": "https://besttime.app/api/v1/venues",
-      "data": {
-           'api_key_private': 'pri_0bc6ad2618fe4bb0b9092c84f41b3010'
-      },
-      "method": "GET"
- };
+      "url": "https://besttime.app/api/v1/forecasts/live?api_key_private=pri_0bc6ad2618fe4bb0b9092c84f41b3010&venue_name=ARoS Aarhus Art Museum&venue_address=Aros Allé 2 8000 Aarhus Denmark ",
 
- $.ajax(settings).done(function (response) {
-      console.log(response);
- });
-
- var settings = {
-      "url": "https://besttime.app/api/v1/forecasts?api_key_private=pri_0bc6ad2618fe4bb0b9092c84f41b3010&venue_name=ARoS Aarhus Art Museum&venue_address=Aros Allé 2 8000 Aarhus Denmark ",
       "data": {
            'api_key_private': 'pri_0bc6ad2618fe4bb0b9092c84f41b3010',
            'venue_name': 'ARoS Aarhus Art Museum',
@@ -59,24 +39,47 @@
       },
       "method": "POST"
  };
- //getting data from above venue
+
  $.ajax(settings).done(function (response) {
       console.log(response);
-      let data = response;
-      let week = data.analysis;
-      for (let i = 0; i <= 6; i++) {
-           for (let j = 2; j <= 14; j = j + 2) {
-                //getting crowdedness of this place from 8 to 20 every 2 hours j = 2 is truly 8am and j = 14 is 8pm
-                let busyness = week[i].hour_analysis[j].intensity_nr;
-                busyness += 3;
-                console.log(busyness)
-                const charts = document.querySelectorAll("#home .graph-wrapper .graph-column")
-                for (let k = 0; k <= 6; k++) {
-                     charts[k].style.height = busyness[k] + "px"
-                     //trying to set a height of each chart using busyness
-                }
-           }
-      }
- });
 
- 
+
+      let live_forecast = response.analysis.venue_live_busyness;
+      let detailsBG = document.getElementById("on-map-details");
+      let iconBG = document.getElementById("icon-bg");
+      let locationIcon = document.getElementById("location-icon");
+
+      console.log(live_forecast);
+
+      //change of colors in container displaying details of place
+
+      if (live_forecast >= 0 && live_forecast < 20) {
+           detailsBG.style.background = "#27d07d";
+           iconBG.style.background = "#27d07d";
+      } else
+      if (live_forecast >= 20 && live_forecast < 40) {
+           detailsBG.style.background = "#95db76";
+           iconBG.style.background = "#95db76";
+      } else
+      if (live_forecast >= 40 && live_forecast < 60) {
+           detailsBG.style.background = "#fbe570";
+           iconBG.style.background = "#fbe570";
+      } else
+      if (live_forecast >= 60 && live_forecast < 80) {
+           detailsBG.style.background = "#fd9964";
+           iconBG.style.background = "#fd9964";
+      } else
+      if (live_forecast >= 80 && live_forecast <= 100) {
+           detailsBG.style.background = "#ff5959";
+           iconBG.style.background = "#ff5959";
+      } else {
+           detailsBG.style.background = "#555555";
+           iconBG.style.background = "#555555";
+
+      };
+
+      //change of position of location icon in gradient bar
+
+      locationIcon.style.marginLeft = "calc(" +
+           live_forecast + "vw / 2)";
+ });
