@@ -101,6 +101,23 @@
 
 
 
+
+ //display of details after clicking on location in the map
+ var pinList = document.querySelectorAll('.mapboxgl-marker');
+ console.log(pinList);
+
+ var pin = document.getElementsByClassName('mapboxgl-marker');
+ let popup = document.getElementById("details-going-up");
+
+ pin.addEventListener('click', () => {
+      popup.style.top = 'calc(100vh - 100px - 40vh)';
+ });
+
+
+
+
+
+
  //source of live forecast api
  var settings = {
       "url": "https://besttime.app/api/v1/forecasts/live?api_key_private=pri_0bc6ad2618fe4bb0b9092c84f41b3010&venue_name=ARoS Aarhus Art Museum&venue_address=Aros Allé 2 8000 Aarhus Denmark ",
