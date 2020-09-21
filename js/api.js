@@ -6,98 +6,98 @@
       center: [10.150088, 56.117216],
       zoom: 14.0
  });
- 
+
  var marker = new mapboxgl.Marker()
-.setLngLat([10.1997, 56.153876])
-.addTo(map);
+      .setLngLat([10.1997, 56.153876])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.154715, 56.1169118])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.154715, 56.1169118])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.206206, 56.1522238])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.206206, 56.1522238])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.158464, 56.131849])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.158464, 56.131849])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2058314, 56.1589012])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2058314, 56.1589012])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2039354, 56.149292])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2039354, 56.149292])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1545136, 56.1162944])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1545136, 56.1162944])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1515312, 56.1158134])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1515312, 56.1158134])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.153506, 56.117881])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.153506, 56.117881])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.151844, 56.116578])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.151844, 56.116578])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1535593, 56.1161758])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1535593, 56.1161758])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1533807, 56.1162376])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1533807, 56.1162376])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.223459, 56.088694])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.223459, 56.088694])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1917731, 56.1589859])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1917731, 56.1589859])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.20594, 56.1065844])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.20594, 56.1065844])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2093286, 56.1586684])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2093286, 56.1586684])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2050017, 56.1490821])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2050017, 56.1490821])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2059281, 56.1513159])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2059281, 56.1513159])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.20594, 56.1528602])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.20594, 56.1528602])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.191969, 56.157934])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.191969, 56.157934])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2071004, 56.1554225])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2071004, 56.1554225])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2063694, 56.1560452])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2063694, 56.1560452])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2031852, 56.1538878])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2031852, 56.1538878])
+      .addTo(map);
 
 
 
@@ -117,46 +117,59 @@ var marker = new mapboxgl.Marker()
       console.log(response);
 
 
-      let live_forecast = response.analysis.venue_live_busyness;
+
+      let itsUndefined = response.analysis;
       let detailsBG = document.getElementById("on-map-details");
       let iconBG = document.getElementById("icon-bg");
       let locationIcon = document.getElementById("location-icon");
 
-      console.log(live_forecast);
 
-      //change of colors in container displaying details of place
-
-      if (live_forecast >= 0 && live_forecast < 20) {
-           detailsBG.style.background = "#27d07d";
-           iconBG.style.background = "#27d07d";
-      } else
-      if (live_forecast >= 20 && live_forecast < 40) {
-           detailsBG.style.background = "#95db76";
-           iconBG.style.background = "#95db76";
-      } else
-      if (live_forecast >= 40 && live_forecast < 60) {
-           detailsBG.style.background = "#fbe570";
-           iconBG.style.background = "#fbe570";
-      } else
-      if (live_forecast >= 60 && live_forecast < 80) {
-           detailsBG.style.background = "#fd9964";
-           iconBG.style.background = "#fd9964";
-      } else
-      if (live_forecast >= 80 && live_forecast <= 100) {
-           detailsBG.style.background = "#ff5959";
-           iconBG.style.background = "#ff5959";
-      } else {
-           detailsBG.style.background = "#555555";
+      if (itsUndefined == undefined) {
+           detailsBG.style.background = "#ffffff";
            iconBG.style.background = "#555555";
+           locationIcon.style.opacity = '0';
+           console.log('i work here');
+      } else {
+           let live_forecast = response.analysis.venue_live_busyness;
+           console.log(live_forecast);
 
-      };
 
-      //change of position of location icon in gradient bar
 
-      locationIcon.style.marginLeft = "calc(" +
-           live_forecast + "vw / 2)";
- });
+           //change of colors in container displaying details of place
 
+           if (live_forecast > 0 && live_forecast < 20) {
+                detailsBG.style.background = "#27d07d";
+                iconBG.style.background = "#27d07d";
+           }
+           if (live_forecast >= 20 && live_forecast < 40) {
+                detailsBG.style.background = "#95db76";
+                iconBG.style.background = "#95db76";
+           }
+           if (live_forecast >= 40 && live_forecast < 60) {
+                detailsBG.style.background = "#fbe570";
+                iconBG.style.background = "#fbe570";
+           }
+           if (live_forecast >= 60 && live_forecast < 80) {
+                detailsBG.style.background = "#fd9964";
+                iconBG.style.background = "#fd9964";
+           }
+           if (live_forecast >= 80 && live_forecast <= 100) {
+                detailsBG.style.background = "#ff5959";
+                iconBG.style.background = "#ff5959";
+           } else {
+                detailsBG.style.background = "#ffffff";
+                iconBG.style.background = "#555555";
+                locationIcon.style.opacity = '0';
+
+
+           };
+           //change of position of location icon in gradient bar
+           locationIcon.style.marginLeft = "calc(" + live_forecast + "vw / 2)";
+
+
+
+      }
+ })
  //Peter's code
 
  var settings = {
@@ -229,5 +242,3 @@ var marker = new mapboxgl.Marker()
       }
 
  });
-
- 
