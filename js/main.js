@@ -5,6 +5,8 @@ window.addEventListener("load", function () {
     setTimeout(() => {
         splash.style.display = "none";
     }, 3000)
+
+
 });
 
 
