@@ -13,37 +13,16 @@
     margin: 0 0 30vw;
 }
 
-.button {
+.category {
     font-family: "Century Gothic";
     font-weight: normal;
     font-size: 19px;
-    text-align: center;
-    padding: 7px;
-    margin: 2vh 10vw 1vh;
+    text-align: left;
+    margin: 3vh 10vw 1vh;
     background-color: #F9F8F3;
-    border-radius: 5px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    border: 1px solid #c9c9c9;
-    text-decoration: none;
-    width: 40vw;
+    width: 20vw;
     opacity: 1;
     justify-content: space-around;
-}
-
-.btn-group {
-    margin: 0 10vw 0 0;
-}
-
-.filter {
-    background-color: #F9F8F3;
-    border: none;
-    font-family: "Century Gothic";
-    font-size: 19px;
-    float: right;
-    margin: 22px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
 }
 
 /* Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex */
@@ -51,48 +30,54 @@
 .street {
     font-family: 'Century Gothic';
     font-size: 17px;
-    margin: 1vh 0;
+    margin: auto 0;
 }
 
 .place {
     font-size: 30px;
     width: 45vw;
+    margin: auto 0;
+}
+
+.fav_wrapper {
+    padding: 1vh 2vw;
 }
 
 .yellow {
     display: flex;
     flex-direction: column;
-    margin: auto 17vw;
+    margin: auto 17vw auto 7vw;
     padding: 0 2vw;
     border-left: 15px solid #FBBE4B;
+    height: 100%;
 }
 
 .green {
     display: flex;
     flex-direction: column;
-    margin: auto 17vw;
+    margin: auto 17vw auto 7vw;
     padding: 0 2vw;
     border-left: 15px solid #27D07D;
+    height: 100%;
 }
 
 .red {
     display: flex;
     flex-direction: column;
-    margin: auto 17vw;
+    margin: auto 17vw auto 7vw;
     padding: 0 2vw;
     border-left: 15px solid #FF5959;
+    height: 100%;
 }
 
 .fav_img {
-    height: 4vh;
+    width: 10 vw;
     margin: auto 0;
 }
 
 ul {
     overflow: hidden;
     list-style: none;
-    padding: 0;
-    margin: 1vh 10vw 2vh;
 }
 
 li {
@@ -102,9 +87,9 @@ li {
     scrollbar-width: none;
     width: 100%;
     font-family: "Josefin Sans";
-    height: 10vh;
-    padding: 7px 0;
-    margin: 1vh 0;
+    height: 12vh;
+    margin: 2vh 0;
+    box-shadow: 0px 3px 10px #DEDDD9;
 }
 
 li::-webkit-scrollbar {
@@ -121,17 +106,16 @@ li button {
 }
 
 li button:first-of-type {
-    flex: 1 0 30%;
+    flex: 1 0 25%;
     background-color: #DEDDD9;
-    margin: 0 0 0 11vw;
+    margin: 0 0 0 20vw;
 }
 
 li {
     flex: 2 0 100%;
-    padding: 0.5rem;
 }
 
 li button:last-of-type {
-    flex: 1 0 30%;
+    flex: 1 0 25%;
     background-color: #FF5959;
 }

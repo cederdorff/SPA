@@ -1,0 +1,125 @@
+{
+    "places": [{
+            "venue_name": "ARoS Aarhus Art Museum",
+            "venue_address": "Aros Allé 2 8000 Aarhus Denmark",
+            "category": "museum"
+        },
+        {
+            "venue_name": "Coop Kvickly Viby J.",
+            "venue_address": "Ringvej Syd 100 8260 Viby J Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "Flintstone Pub",
+            "venue_address": "Rosenkrantzgade 20 8000 Aarhus Denmark",
+            "category": "bar"
+        },
+        {
+            "venue_name": "Fitness World",
+            "venue_address": "Lykkesholms Allé 106 8260 Viby J Denmark",
+            "category": "gym"
+        },
+        {
+            "venue_name": "Tapashi Sushi",
+            "venue_address": "Klostergade 52 8000 Aarhus Denmark",
+            "category": "restaurant"
+        },
+        {
+            "venue_name": "CinemaxX Aarhus",
+            "venue_address": "M. P. Bruuns Gade 25 8000 Aarhus Denmark",
+            "category": "theatre"
+        },
+        {
+            "venue_name": "JYSK",
+            "venue_address": "MEGA SYD Ringvej Syd 98C 8260 Viby J Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "McDonald's",
+            "venue_address": "Ringvej Syd 86 8260 Viby J Denmark",
+            "category": "restaurant"
+        },
+        {
+            "venue_name": "BAUHAUS Viby",
+            "venue_address": "Ringvej Syd 102 8260 Viby J Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "POWER",
+            "venue_address": "Ringvej Syd 82 8260 Viby J Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "Elgiganten",
+            "venue_address": "Ringvej Syd 98 8260 Viby J Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "Petworld Aarhus Viby",
+            "venue_address": "Ringvej Syd 96 8260 Viby J Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "Moesgaard Museum",
+            "venue_address": "Moesgård Allé 15 8270 Højbjerg Denmark",
+            "category": "museum"
+        },
+        {
+            "venue_name": "Den Gamle By",
+            "venue_address": "Viborgvej 2 8000 Aarhus C Denmark",
+            "category": "museum"
+        },
+        {
+            "venue_name": "Fitness World",
+            "venue_address": "Stenvej 21 8270 Højbjerg Denmark",
+            "category": "gym"
+        },
+        {
+            "venue_name": "Mefisto Restaurant & Gårdhave",
+            "venue_address": "Volden 28 8000 Aarhus Denmark",
+            "category": "restaurant"
+        },
+        {
+            "venue_name": "Bruun's Gallery",
+            "venue_address": "M. P. Bruuns Gade 25 8000 Aarhus Denmark",
+            "category": "shop"
+        },
+        {
+            "venue_name": "Nordisk Film Cinemas Aarhus C",
+            "venue_address": "Sankt Knuds Torv 15 8000 Aarhus Denmark",
+            "category": "theatre"
+        },
+        {
+            "venue_name": "Fitness World - Aarhus C, Denmark, Scandinavian",
+            "venue_address": "Margrethepladsen 4 8000 Aarhus Denmark",
+            "category": "gym"
+        },
+        {
+            "venue_name": "HiFive Fitness Aarhus",
+            "venue_address": "Viborgvej 3 8000 Aarhus Denmark",
+            "category": "gym"
+        },
+        {
+            "venue_name": "Vinstuen",
+            "venue_address": "Fiskergyde 15 8000 Aarhus Denmark",
+            "category": "bar"
+        },
+        {
+            "venue_name": "Waxies",
+            "venue_address": "Frederiksgade 16 8000 Aarhus C Denmark",
+            "category": "bar"
+        },
+        {
+            "venue_name": "Sherlock Holmes Pub",
+            "venue_address": "Frederiksgade 76A 8000 Aarhus C Denmark",
+            "category": "bar"
+        }
+
+
+
+
+
+
+    ]
+
+}
