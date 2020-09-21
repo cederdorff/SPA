@@ -103,20 +103,12 @@
 
 
  //display of details after clicking on location in the map
- var pinList = document.querySelectorAll('.mapboxgl-marker');
- console.log(pinList);
+
 
  var pin = document.getElementsByClassName('mapboxgl-marker');
  let popup = document.getElementById("details-going-up");
 
- pin.addEventListener("click", () => {
-      popup.style.top = 'calc(100vh - 100px - 40vh)';
- });
- for (let i = 0; i < 23; i++) {
-      pinList[i].addEventListener("click", () => {
-           popup.style.top = "calc(100vh - 100px - 40vh)"
-      });
- }
+
 
 
 
@@ -282,7 +274,6 @@
            let name = place.venue_name;
            let adress = place.venue_address;
 
-
            htmlTemplate += /*html*/
                 `
           <li> 
@@ -293,6 +284,18 @@
       }
       document.querySelector(".venue_container").innerHTML = htmlTemplate;
  }
+
+ //  function goToPins(places, pinList, map, searchContainer) {
+ //       for (let i = 0; i < 23; i++) {
+ //            places[i].addEventListener("click", () => {
+ //                 map.flyTo({
+ //                      center: [10.20594, 56.1065844],
+ //                      speed: 0.2
+ //                 });
+ //                 searchContainer.style.display = 'none';
+ //            })
+ //       }
+ //  }
 
  function search(value) {
       console.log(value);
@@ -321,4 +324,6 @@
       searchContainer.style.display = 'none';
  })
  document.querySelector(".mapboxgl-ctrl-logo").style.display = 'none';
- document.querySelector(".mapboxgl-ctrl-attrib.mapboxgl-compact:after").style.display = 'none';
+
+
+ var pinList = document.querySelectorAll('.mapboxgl-marker');
