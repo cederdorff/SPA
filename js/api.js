@@ -109,9 +109,16 @@
  var pin = document.getElementsByClassName('mapboxgl-marker');
  let popup = document.getElementById("details-going-up");
 
- pin.addEventListener('click', () => {
+ pin.addEventListener("click", () => {
       popup.style.top = 'calc(100vh - 100px - 40vh)';
  });
+ for (let i = 0; i < 23; i++) {
+      pinList[i].addEventListener("click", () => {
+           popup.style.top = "calc(100vh - 100px - 40vh)"
+      });
+ }
+
+
 
 
 
