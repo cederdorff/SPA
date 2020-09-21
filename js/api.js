@@ -106,18 +106,24 @@
  var pinList = document.querySelectorAll('.mapboxgl-marker');
  console.log(pinList);
 
- var pin = document.getElementsByClassName('mapboxgl-marker');
+ let pin = document.getElementsByClassName('mapboxgl-marker');
+ let pinLength = pin.length;
  let popup = document.getElementById("details-going-up");
 
- pin.addEventListener('click', () => {
+ let popupFunction = function () {
       popup.style.top = 'calc(100vh - 100px - 40vh)';
- });
-
-
-
-
-
-
+ };
+ let popupGone = function () {
+      popup.style.top = '100vh';
+ };
+ for (var i = 0; i < pinLength; i++) {
+      pin[i].addEventListener('click', popupFunction, false);
+ }
+/*
+ for (var i = 0; i < pinLength; i++) {
+      pin[i].addEventListener('blur', popupGone, false); 
+ }
+*/
  //source of live forecast api
  var settings = {
       "url": "https://besttime.app/api/v1/forecasts/live?api_key_private=pri_0bc6ad2618fe4bb0b9092c84f41b3010&venue_name=ARoS Aarhus Art Museum&venue_address=Aros Allé 2 8000 Aarhus Denmark ",
@@ -267,7 +273,6 @@
       let places = data.places;
       appendPlaces(places);
  }
- fetchVenues();
 
  function appendPlaces(places) {
       let htmlTemplate = "";
@@ -278,30 +283,15 @@
 
            htmlTemplate += /*html*/
                 `
-          <li> 
-           <h3>${name}</h3>
-            <p> ${adress}</p>
-          </li>
-        `;
+         <li> 
+          <h3>${name}</h3>
+           <p> ${adress}</p>
+         </li>
+       `;
       }
       document.querySelector(".venue_container").innerHTML = htmlTemplate;
  }
-
- function search(value) {
-      console.log(value);
-      let filteredPlaces = [];
-      for (let place of places) {
-           let name = place.venue_name.toLowerCase();
-           if (name.includes(value.toLowerCase())) {
-                filteredPlaces.push(place);
-           }
-      }
-
-      console.log(filteredPlaces);
-      appendPlaces(filteredPlaces);
- }
-
-
+ fetchVenues();
 
  const searchContainer = document.querySelector('.search_container');
  const searchBar = document.querySelector('#home>input');
