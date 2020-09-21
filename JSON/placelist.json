@@ -70,11 +70,6 @@
             "category": "museum"
         },
         {
-            "venue_name": "Den Gamle By",
-            "venue_address": "Viborgvej 2 8000 Aarhus C Denmark",
-            "category": "museum"
-        },
-        {
             "venue_name": "Fitness World",
             "venue_address": "Stenvej 21 8270 Højbjerg Denmark",
             "category": "gym"
@@ -83,11 +78,6 @@
             "venue_name": "Mefisto Restaurant & Gårdhave",
             "venue_address": "Volden 28 8000 Aarhus Denmark",
             "category": "restaurant"
-        },
-        {
-            "venue_name": "Bruun's Gallery",
-            "venue_address": "M. P. Bruuns Gade 25 8000 Aarhus Denmark",
-            "category": "shop"
         },
         {
             "venue_name": "Bruun's Gallery",
