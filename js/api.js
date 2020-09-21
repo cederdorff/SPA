@@ -125,7 +125,7 @@
 
 
       if (itsUndefined == undefined) {
-           detailsBG.style.background = "#ffffff";
+           detailsBG.style.background = "#555555";
            iconBG.style.background = "#555555";
            locationIcon.style.opacity = '0';
            console.log('i work here');
@@ -157,7 +157,7 @@
                 detailsBG.style.background = "#ff5959";
                 iconBG.style.background = "#ff5959";
            } else {
-                detailsBG.style.background = "#ffffff";
+                detailsBG.style.background = "#555555";
                 iconBG.style.background = "#555555";
                 locationIcon.style.opacity = '0';
 
