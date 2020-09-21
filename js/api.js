@@ -6,98 +6,98 @@
       center: [10.150088, 56.117216],
       zoom: 14.0
  });
- 
+
  var marker = new mapboxgl.Marker()
-.setLngLat([10.1997, 56.153876])
-.addTo(map);
+      .setLngLat([10.1997, 56.153876])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.154715, 56.1169118])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.154715, 56.1169118])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.206206, 56.1522238])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.206206, 56.1522238])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.158464, 56.131849])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.158464, 56.131849])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2058314, 56.1589012])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2058314, 56.1589012])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2039354, 56.149292])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2039354, 56.149292])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1545136, 56.1162944])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1545136, 56.1162944])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1515312, 56.1158134])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1515312, 56.1158134])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.153506, 56.117881])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.153506, 56.117881])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.151844, 56.116578])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.151844, 56.116578])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1535593, 56.1161758])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1535593, 56.1161758])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1533807, 56.1162376])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1533807, 56.1162376])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.223459, 56.088694])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.223459, 56.088694])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.1917731, 56.1589859])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.1917731, 56.1589859])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.20594, 56.1065844])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.20594, 56.1065844])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2093286, 56.1586684])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2093286, 56.1586684])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2050017, 56.1490821])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2050017, 56.1490821])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2059281, 56.1513159])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2059281, 56.1513159])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.20594, 56.1528602])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.20594, 56.1528602])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.191969, 56.157934])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.191969, 56.157934])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2071004, 56.1554225])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2071004, 56.1554225])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2063694, 56.1560452])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2063694, 56.1560452])
+      .addTo(map);
 
-var marker = new mapboxgl.Marker()
-.setLngLat([10.2031852, 56.1538878])
-.addTo(map);
+ var marker = new mapboxgl.Marker()
+      .setLngLat([10.2031852, 56.1538878])
+      .addTo(map);
 
 
 
@@ -230,4 +230,33 @@ var marker = new mapboxgl.Marker()
 
  });
 
- 
+ async function fetchVenues(userName) {
+      let url = `../JSON/placelist.json`;
+      let response = await fetch(url); // fetch and wait the response
+      let data = await response.json(); // read response body and wait for parsing the JSON
+      let places = data.places;
+      appendPlaces(places);
+ }
+
+ function appendPlaces(places) {
+      let htmlTemplate = "";
+      for (const post of places) {
+           let imageUrl = post.node.thumbnail_src;
+           let imageCaption = post.node.edge_media_to_caption.edges[0].node.text;
+           let likes = post.node.edge_liked_by.count;
+           let comments = post.node.edge_media_to_comment.count;
+           let location = post.node.location.name;
+           let taggedUsers = taggedUsersToString(post.node.edge_media_to_tagged_user.edges);
+
+           htmlTemplate += /*html*/ `
+         <article>
+           <img src="${imageUrl}">
+           <p>Likes: ${likes}, Comments: ${comments}</p>
+           <p>${imageCaption}</p>
+           <p>Location: ${location}</p>
+           Tagged Users: ${taggedUsers}
+         </article>
+       `;
+      }
+      document.querySelector("#instagram-posts").innerHTML = htmlTemplate;
+ }
