@@ -296,3 +296,5 @@
  xIcon.addEventListener('click', () => {
       searchContainer.style.display = 'none';
  })
+ document.querySelector(".mapboxgl-ctrl-logo").style.display = 'none';
+ document.querySelector(".mapboxgl-ctrl-attrib.mapboxgl-compact:after").style.display = 'none';
