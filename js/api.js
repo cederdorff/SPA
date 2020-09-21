@@ -230,8 +230,8 @@
 
  });
 
- async function fetchVenues(userName) {
-      let url = `../JSON/placelist.json`;
+ async function fetchVenues() {
+      let url = `JSON/placelist.json`;
       let response = await fetch(url); // fetch and wait the response
       let data = await response.json(); // read response body and wait for parsing the JSON
       let places = data.places;
@@ -240,23 +240,30 @@
 
  function appendPlaces(places) {
       let htmlTemplate = "";
-      for (const post of places) {
-           let imageUrl = post.node.thumbnail_src;
-           let imageCaption = post.node.edge_media_to_caption.edges[0].node.text;
-           let likes = post.node.edge_liked_by.count;
-           let comments = post.node.edge_media_to_comment.count;
-           let location = post.node.location.name;
-           let taggedUsers = taggedUsersToString(post.node.edge_media_to_tagged_user.edges);
+      for (let place of places) {
+           let name = place.venue_name;
+           let adress = place.venue_address;
 
-           htmlTemplate += /*html*/ `
-         <article>
-           <img src="${imageUrl}">
-           <p>Likes: ${likes}, Comments: ${comments}</p>
-           <p>${imageCaption}</p>
-           <p>Location: ${location}</p>
-           Tagged Users: ${taggedUsers}
-         </article>
+
+           htmlTemplate += /*html*/
+                `
+         <li> 
+          <h3>${name}</h3>
+           <p> ${adress}</p>
+         </li>
        `;
       }
-      document.querySelector("#instagram-posts").innerHTML = htmlTemplate;
+      document.querySelector(".venue_container").innerHTML = htmlTemplate;
  }
+ fetchVenues();
+
+ const searchContainer = document.querySelector('.search_container');
+ const searchBar = document.querySelector('#home>input');
+ const xIcon = document.querySelector('.search_container > i');
+
+ searchBar.addEventListener('click', () => {
+      searchContainer.style.display = 'block';
+ })
+ xIcon.addEventListener('click', () => {
+      searchContainer.style.display = 'none';
+ })
