@@ -83,7 +83,7 @@
 }
 
 #onboarding>div>img:nth-last-child(1) {
-  width: 50px;
+  width: 80px;
   margin: 30px;
 }
 
@@ -101,6 +101,11 @@
 
 #onboarding>div:nth-last-child(4) {
   z-index: 5;
+
+}
+
+#onboarding>div:nth-last-child(5) {
+  z-index: 6;
 
 }
 

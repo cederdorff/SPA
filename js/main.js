@@ -55,14 +55,14 @@ const onBoardingSkip = document.querySelectorAll("#onboarding .top_part .skip");
 const onBoardingContainers = document.querySelectorAll("#onboarding > div");
 
 
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 5; i++) {
     onBoardingButtons[i].addEventListener('click', () => {
         onBoardingContainers[i].style.display = "none";
     })
 }
-for (let j = 0; j < 4; j++) {
+for (let j = 0; j < 5; j++) {
     onBoardingSkip[j].addEventListener('click', () => {
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
             onBoardingContainers[i].style.display = "none";
         }
     })

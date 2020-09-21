@@ -55,11 +55,7 @@
                <p>SafeToGo is your way of seeing how crowded any store, restaurant or public space is. Our goal is to
                     help you feel safe amongst other people while minimizing the spread of the corona virus.</p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_1.png" alt="progress dots" class="progress_dots">
-               <div class="credits">
-                    <p class="credit_text">Data provided by</p>
-                    <img src="media/besttime.PNG" alt="logo" class="logo">
-               </div>
+               <img src="media/onboarding_progress1.png" alt="progress dots" class="progress_dots">
           </div>
           <div>
                <div class="top_part">
@@ -73,11 +69,7 @@
 
                     Settings > Privacy > Location > SafeToGo > Allow location access </p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_2.png" alt="progress dots" class="progress_dots">
-               <div class="credits">
-                    <p class="credit_text">Data provided by</p>
-                    <img src="media/besttime.PNG" alt="logo" class="logo">
-               </div>
+               <img src="media/onboarding_progress2.png" alt="progress dots" class="progress_dots">
           </div>
           <div>
                <div class="top_part">
@@ -89,11 +81,7 @@
                <p>When you first enter you will see a overview of all the public places near your current location.
                     Simply click on your chosen place and see the crowdedness status of this location.</p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_3.png" alt="progress dots" class="progress_dots">
-               <div class="credits">
-                    <p class="credit_text">Data provided by</p>
-                    <img src="media/besttime.PNG" alt="logo" class="logo">
-               </div>
+               <img src="media/onboarding_progress3.png" alt="progress dots" class="progress_dots">
           </div>
           <div>
                <div class="top_part">
@@ -104,12 +92,19 @@
                <h3>Save a Location for Later</h3>
                <p>If you want to save a location for later, just click on the favourite button. This way you will have
                     easy access to all you favorite locations. </p>
-               <button class="next">Get Started</button>
-               <img src="media/onboarding_progress_4.png" alt="progress dots" class="progress_dots">
-               <div class="credits">
-                    <p class="credit_text">Data provided by</p>
-                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               <button class="next">Next</button>
+               <img src="media/onboarding_progress4.png" alt="progress dots" class="progress_dots">
+          </div>
+          <div>
+               <div class="top_part">
+                    <img src="media/onboarding.png" alt="logo">
+                    <p class="skip">SKIP</p>
                </div>
+               <img src="media/besttime.PNG" alt="logo" class="credit_logo">
+               <h3 class="credit_text">API provided by BestTime.app</h3>
+               <p>All venue data is courtesy of BestTime so big thanks to them!</p>
+               <button class="next">Get Started</button>
+               <img src="media/onboarding_progress5.png" alt="progress dots" class="progress_dots">
           </div>
      </section>
 
@@ -239,56 +234,60 @@
                <h1 class="bar-logo">SafeToGo</h1>
           </div>
           <h1 class="fav">Favourites</h1>
-          <div class="btn-group">
-               <button class="button">Restaurants</button>
-               <button class="filter">Filter<img src="media/filter_icon.png" alt="filter"
-                         style="width: 25px; margin-left: 10px;"></button>
-          </div>
+          <h2 class="category">Restaurants</h2>
           <!-- Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex -->
           <section>
                <ul>
                     <li>
-                         <div class="yellow">
-                              <h1 class="place">store name</h1>
-                              <p class="street">street</p>
+                         <div class="fav_wrapper">
+                              <div class="yellow">
+                                   <h1 class="place">store name</h1>
+                                   <p class="street">street</p>
+                              </div>
                          </div>
                          <img src="media/md-notifications.png" alt="notification bell" class="fav_img">
                          <button><img src="media/md-notifications-off.png" alt="notification bell off"></button>
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                     <li>
-                         <div class="green">
-                              <h1 class="place">store name</h1>
-                              <p class="street">street</p>
+                         <div class="fav_wrapper">
+                              <div class="green">
+                                   <h1 class="place">store name</h1>
+                                   <p class="street">street</p>
+                              </div>
                          </div>
                          <button><img src="media/md-notifications.png" alt="notification bell"></button>
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                </ul>
-               <button class="button">Shops</button>
+               <h2 class="category">Shops</h2>
                <ul>
                     <li>
-                         <div class="red">
-                              <h1 class="place">store name</h1>
-                              <p class="street">street</p>
+                         <div class="fav_wrapper">
+                              <div class="red">
+                                   <h1 class="place">store name</h1>
+                                   <p class="street">street</p>
+                              </div>
                          </div>
                          <img src="media/md-notifications.png" alt="notification bell" class="fav_img">
                          <button><img src="media/md-notifications-off.png" alt="notification bell off"></button>
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                     <li>
-                         <div class="yellow">
-                              <h1 class="place">store name</h1>
-                              <p class="street">street</p>
+                         <div class="fav_wrapper">
+                              <div class="yellow">
+                                   <h1 class="place">store name</h1>
+                                   <p class="street">street</p>
+                              </div>
                          </div>
                          <button><img src="media/md-notifications.png" alt="notification bell"></button>
                          <button><img src="media/md-trash.png" alt="trash"></button>
                     </li>
                </ul>
-               <button class="button">Bars</button>
-               <button class="button">Gyms</button>
-               <button class="button">Museums</button>
-               <button class="button">Theatres</button>
+               <h2 class="category">Bars</h2>
+               <h2 class="category">Gyms</h2>
+               <h2 class="category">Museums</h2>
+               <h2 class="category">Theatres</h2>
           </section>
      </section>
 
