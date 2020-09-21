@@ -105,7 +105,8 @@
  //display of details after clicking on location in the map
 
 
- var pin = document.getElementsByClassName('mapboxgl-marker');
+ let pin = document.getElementsByClassName('mapboxgl-marker');
+ let pinLength = pin.length;
  let popup = document.getElementById("details-going-up");
 
 
@@ -116,6 +117,21 @@
 
 
 
+
+ let popupFunction = function () {
+      popup.style.top = 'calc(100vh - 100px - 40vh)';
+ };
+ let popupGone = function () {
+      popup.style.top = '100vh';
+ };
+ for (var i = 0; i < pinLength; i++) {
+      pin[i].addEventListener('click', popupFunction, false);
+ }
+ /*
+  for (var i = 0; i < pinLength; i++) {
+       pin[i].addEventListener('blur', popupGone, false); 
+  }
+ */
 
  //source of live forecast api
  var settings = {
@@ -276,11 +292,11 @@
 
            htmlTemplate += /*html*/
                 `
-          <li> 
-           <h3>${name}</h3>
-            <p> ${adress}</p>
-          </li>
-        `;
+         <li> 
+          <h3>${name}</h3>
+           <p> ${adress}</p>
+         </li>
+       `;
       }
       document.querySelector(".venue_container").innerHTML = htmlTemplate;
  }
@@ -310,6 +326,7 @@
       console.log(filteredPlaces);
       appendPlaces(filteredPlaces);
  }
+
 
 
 
