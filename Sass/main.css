@@ -1,4 +1,4 @@
-#onboarding>div {
+#onboarding > div {
   width: 100%;
   height: 100vh;
   display: -webkit-box;
@@ -6,11 +6,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F9F8F3;
   position: fixed;
   top: 0;
@@ -18,90 +18,92 @@
   z-index: 2;
 }
 
-#onboarding>div .top_part {
+#onboarding > div .top_part {
   width: 100%;
   height: 8vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#onboarding>div .top_part img {
+#onboarding > div .top_part img {
   width: 100px;
   margin-left: 7%;
 }
 
-#onboarding>div .top_part p {
+#onboarding > div .top_part p {
   margin-right: 7%;
   font-family: "Josefin Sans", sans-serif;
   font-size: 20px;
   color: #212322;
 }
 
-#onboarding>div>img:nth-child(2) {
+#onboarding > div > img:nth-child(2) {
   height: 320px;
   padding: 50px 0;
 }
 
-#onboarding>div>h3 {
+#onboarding > div > h3 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: 1.5em;
   color: #212322;
 }
 
-#onboarding>div>p {
+#onboarding > div > p {
   font-family: "century-gothic", sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
   color: #212322;
   width: 80%;
-  height: 200px;
+  height: 220px;
   text-align: center;
-  padding: 15px 0;
-  line-height: 25px;
+  padding: 30px 0;
 }
 
-#onboarding>div>button {
-  font-family: "century-gothic", sans-serif;
+#onboarding > div > button {
   text-align: center;
   color: #F9F8F3;
   background-color: #27D07D;
   width: 170px;
   height: 45px;
-  font-size: 1.3em;
+  font-size: 1.2em;
   border: 0;
   border-radius: 6px;
-  margin: 2vw 0 0;
+  margin: 25px 0;
+  margin-bottom: 5px;
   -webkit-filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
-  filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.16));
 }
 
-#onboarding>div>img:nth-last-child(1) {
-  width: 50px;
-  margin: 30px;
+#onboarding > div > img:nth-last-child(1) {
+  width: 75px;
 }
 
-#onboarding>div:nth-last-child(1) {
+#onboarding > div:nth-last-child(1) {
   z-index: 2;
 }
 
-#onboarding>div:nth-last-child(2) {
+#onboarding > div:nth-last-child(2) {
   z-index: 3;
 }
 
-#onboarding>div:nth-last-child(3) {
+#onboarding > div:nth-last-child(3) {
   z-index: 4;
 }
 
-#onboarding>div:nth-last-child(4) {
+#onboarding > div:nth-last-child(4) {
   z-index: 5;
-
 }
 
+#home input {
+  width: 60%;
+  height: 40px;
+  position: absolute;
+}
 /*# sourceMappingURL=main.css.map */
