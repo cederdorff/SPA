@@ -117,46 +117,59 @@
       console.log(response);
 
 
-      let live_forecast = response.analysis.venue_live_busyness;
+
+      let itsUndefined = response.analysis;
       let detailsBG = document.getElementById("on-map-details");
       let iconBG = document.getElementById("icon-bg");
       let locationIcon = document.getElementById("location-icon");
 
-      console.log(live_forecast);
 
-      //change of colors in container displaying details of place
-
-      if (live_forecast >= 0 && live_forecast < 20) {
-           detailsBG.style.background = "#27d07d";
-           iconBG.style.background = "#27d07d";
-      } else
-      if (live_forecast >= 20 && live_forecast < 40) {
-           detailsBG.style.background = "#95db76";
-           iconBG.style.background = "#95db76";
-      } else
-      if (live_forecast >= 40 && live_forecast < 60) {
-           detailsBG.style.background = "#fbe570";
-           iconBG.style.background = "#fbe570";
-      } else
-      if (live_forecast >= 60 && live_forecast < 80) {
-           detailsBG.style.background = "#fd9964";
-           iconBG.style.background = "#fd9964";
-      } else
-      if (live_forecast >= 80 && live_forecast <= 100) {
-           detailsBG.style.background = "#ff5959";
-           iconBG.style.background = "#ff5959";
-      } else {
+      if (itsUndefined == undefined) {
            detailsBG.style.background = "#555555";
            iconBG.style.background = "#555555";
+           locationIcon.style.opacity = '0';
+           console.log('i work here');
+      } else {
+           let live_forecast = response.analysis.venue_live_busyness;
+           console.log(live_forecast);
 
-      };
 
-      //change of position of location icon in gradient bar
 
-      locationIcon.style.marginLeft = "calc(" +
-           live_forecast + "vw / 2)";
- });
+           //change of colors in container displaying details of place
 
+           if (live_forecast > 0 && live_forecast < 20) {
+                detailsBG.style.background = "#27d07d";
+                iconBG.style.background = "#27d07d";
+           }
+           if (live_forecast >= 20 && live_forecast < 40) {
+                detailsBG.style.background = "#95db76";
+                iconBG.style.background = "#95db76";
+           }
+           if (live_forecast >= 40 && live_forecast < 60) {
+                detailsBG.style.background = "#fbe570";
+                iconBG.style.background = "#fbe570";
+           }
+           if (live_forecast >= 60 && live_forecast < 80) {
+                detailsBG.style.background = "#fd9964";
+                iconBG.style.background = "#fd9964";
+           }
+           if (live_forecast >= 80 && live_forecast <= 100) {
+                detailsBG.style.background = "#ff5959";
+                iconBG.style.background = "#ff5959";
+           } else {
+                detailsBG.style.background = "#555555";
+                iconBG.style.background = "#555555";
+                locationIcon.style.opacity = '0';
+
+
+           };
+           //change of position of location icon in gradient bar
+           locationIcon.style.marginLeft = "calc(" + live_forecast + "vw / 2)";
+
+
+
+      }
+ })
  //Peter's code
 
  var settings = {
