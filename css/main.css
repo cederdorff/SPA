@@ -13,6 +13,29 @@ frame {
     height: auto;
 }
 
+.credits {
+    height: 5vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.credit_text {
+    font-family: 'Century Gothic';
+    font-size: 4vw;
+    margin: auto;
+    color: #766CF1;
+}
+
+.logo {
+    width: 40vw;
+}
+
+.progress_dots {
+    width: 16vw;
+    margin: 3vw;
+}
+
 body {
     background-color: #f9f8f3;
 }
@@ -31,6 +54,7 @@ body {
     vertical-align: middle;
     height: 100px;
     box-shadow: 0 -8px 10px -6px #D0D0D0;
+    width: 100%;
 }
 
 
@@ -112,11 +136,6 @@ body {
         z-index: 99;
     }
 }
-
-
-
-
-
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {}

@@ -15,10 +15,7 @@
      <script src="https://kit.fontawesome.com/d4d9665ced.js" crossorigin="anonymous"></script>
      <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
      <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-     <link rel = "stylesheet" 
-         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.min.css" />
-      <link rel = "stylesheet" 
-         href = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/css/framework7.ios.colors.min.css" />
+     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body onhashchange="pageChange()">
@@ -58,7 +55,11 @@
                <p>SafeToGo is your way of seeing how crowded any store, restaurant or public space is. Our goal is to
                     help you feel safe amongst other people while minimizing the spread of the corona virus.</p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_1.png" alt="progress dots">
+               <img src="media/onboarding_progress_1.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
           <div>
                <div class="top_part">
@@ -66,13 +67,17 @@
                     <p class="skip">SKIP</p>
                </div>
                <img src="media/map_icon.png" alt="">
-               <h3>Turn on your location</h3>
+               <h3>Turn on your Location</h3>
                <p>Before you begin make sure you have enabled Location Services either when it pops up or in your
                     settings. <br><br>
 
                     Settings > Privacy > Location > SafeToGo > Allow location access </p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_2.png" alt="progress dots">
+               <img src="media/onboarding_progress_2.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
           <div>
                <div class="top_part">
@@ -80,11 +85,15 @@
                     <p class="skip">SKIP</p>
                </div>
                <img src="media/map_pin_icon.png" alt="">
-               <h3>Find a specific public place</h3>
+               <h3>Find a Specific Public Place</h3>
                <p>When you first enter you will see a overview of all the public places near your current location.
                     Simply click on your chosen place and see the crowdedness status of this location.</p>
                <button class="next">Next</button>
-               <img src="media/onboarding_progress_3.png" alt="progress dots">
+               <img src="media/onboarding_progress_3.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
           <div>
                <div class="top_part">
@@ -92,11 +101,15 @@
                     <p class="skip">SKIP</p>
                </div>
                <img src="media/heart_icon.png" alt="">
-               <h3>Save a location for later</h3>
+               <h3>Save a Location for Later</h3>
                <p>If you want to save a location for later, just click on the favourite button. This way you will have
                     easy access to all you favorite locations. </p>
                <button class="next">Get Started</button>
-               <img src="media/onboarding_progress_4.png" alt="progress dots">
+               <img src="media/onboarding_progress_4.png" alt="progress dots" class="progress_dots">
+               <div class="credits">
+                    <p class="credit_text">Data provided by</p>
+                    <img src="media/besttime.PNG" alt="logo" class="logo">
+               </div>
           </div>
      </section>
 
@@ -136,8 +149,8 @@
      <section id="home" class="page">
           <div id="map"></div>
           <div id='details-going-up'>
-               <div class="place-details-on-map">
-                    <div class="icon-bottom-container">
+               <div class="place-details-on-map" id='on-map-details'>
+                    <div class="icon-bottom-container" id="icon-bg">
                          <img src="media/details-icons/bar.png" class="icon-details">
 
                     </div>
@@ -160,7 +173,7 @@
                     <p class="should-i-go">Should I go?</p>
                     <div class="gradient-bar">
                          <img src="media/Icon ionic-ios-checkmark-circle-outline.png">
-                         <img src="media/Icon material-location-on.png">
+                         <img id='location-icon' class='loc-icon' src="media/Icon material-location-on.png">
                          <img src="media/ios-close-circle-outline.png">
                     </div>
                     <p class="should-i-go">Crowdedness during opening hours</p>
@@ -229,97 +242,61 @@
                <button class="filter">Filter<img src="media/filter_icon.png"
                          style="width: 25px; margin-left: 10px;"></button>
           </div>
-
-          
-                         <div class = "list-block">
-                              <ul class="container-swipe">
-                                 <li class = "swipeout">
-                                    <div class = "swipeout-content item-content">
-                                       <div class = "item-media"></div>
-                                       <div class = "item-inner">
-                                          <div class = "item-title">
-                                             <div class="yellow">
-                                                  
-                                                       <h1 class="place">McDonald's</h1>
-                                                       <p class="street">street restaurant</p>
-                                                  
-                                             </div>
-                                          </div>
-                                          
-                                       </div>
-                                    </div>
-                                    <div class = "swipeout-actions-right"><a href = "#" class = "task1 bg-green">Task 1</a><a href = "#" data-confirm = "Are you sure to delete this item?" data-close-on-cancel = "true" class = "swipeout-delete bg-yellow">Delete</a></div>
-                                 </li>
-                                 
-                                 <li class = "swipeout">
-                                    <div class = "swipeout-content item-content">
-                                       <div class = "item-media"><i class = "icon icon-form-name"></i></div>
-                                       <div class = "item-inner">
-                                          <div class = "item-title">With confirmation</div>
-                                          <div class = "item-after"> <span class = "badge ">78</span></div>
-                                       </div>
-                                    </div>
-                                    <div class = "swipeout-actions-right"><a href = "#" class = "task1 bg-green">Task 1</a><a href = "#" data-confirm = "Are you sure to delete this item?" data-confirm-title = "Delete?" data-close-on-cancel = "true" class = "swipeout-delete bg-yellow">Delete</a></div>
-                                 </li>
-                              </ul>
-                           </div>
-
-                           <script type = "text/javascript" 
-         src = "https://cdnjs.cloudflare.com/ajax/libs/framework7/1.4.2/js/framework7.min.js"></script>
-         
-      <script>
-         var myApp = new Framework7();
-
-         var $$ = Dom7;
-
-         $$('.task1').on('click', function () {
-            myApp.alert('Task 1 Clicked !!');
-         });
-      </script>
-
-          <div class="yellow">
-               <div class="places">
-               <img src="media/md-notifications.png"style="width: 20px; margin-left: 20px; float: right; "> 
-                    <h1 class="place">McDonald's</h1>
-                    <p class="street">street restaurant</p>
-               </div>
-          </div>
-
-          <div class="red">
-               <div class="places">
-                    <h1 class="place">McDonald's</h1>
-                    <p class="street">street restaurant</p>
-               </div>
-          </div>
-     </div>
-
-
-
-          <button class="button">Supermarkets</button>
-
-
-          <div class="yellow">
-               <div class="places"> <img src="media/md-notifications.png"
-                         style="width: 20px; margin-left: 20px; float: right; ">
-                    <h1 class="place">Kvickly</h1>
-                    <p class="street">street restaurant</p>
-               </div>
-          </div>
-
-          <div class="green">
-               <div class="places">
-                    <h1 class="place">Fakta</h1>
-                    <p class="street">street restaurant</p>
-               </div>
-          </div>
-          
-
+          <!-- Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex -->
+          <section>
+               <ul>
+                    <li>
+                         <div class="yellow">
+                              <h1 class="place">store name</h1>
+                              <p class="street">street</p>
+                         </div>
+                         <img src="media/md-notifications.png" alt="notification bell" class="fav_img">
+                         <button><img src="media/md-notifications-off.png" alt="notification bell off"></button>
+                         <button><img src="media/md-trash.png" alt="trash"></button>
+                    </li>
+                    <li>
+                         <div class="green">
+                              <h1 class="place">store name</h1>
+                              <p class="street">street</p>
+                         </div>
+                         <button><img src="media/md-notifications.png" alt="notification bell"></button>
+                         <button><img src="media/md-trash.png" alt="trash"></button>
+                    </li>
+               </ul>
+               <button class="button">Shops</button>
+               <ul>
+                    <li>
+                         <div class="red">
+                              <h1 class="place">store name</h1>
+                              <p class="street">street</p>
+                         </div>
+                         <img src="media/md-notifications.png" alt="notification bell" class="fav_img">
+                         <button><img src="media/md-notifications-off.png" alt="notification bell off"></button>
+                         <button><img src="media/md-trash.png" alt="trash"></button>
+                    </li>
+                    <li>
+                         <div class="yellow">
+                              <h1 class="place">store name</h1>
+                              <p class="street">street</p>
+                         </div>
+                         <button><img src="media/md-notifications.png" alt="notification bell"></button>
+                         <button><img src="media/md-trash.png" alt="trash"></button>
+                    </li>
+               </ul>
+               <button class="button">Bars</button>
+               <button class="button">Gyms</button>
+               <button class="button">Museums</button>
+               <button class="button">Theatres</button>
+          </section>
      </section>
 
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
      <!-- SPA functionality -->
      <script src="js/spa.js"></script>
      <!-- Main JS file -->
      <script src="js/main.js"></script>
+     <!-- API functionalities-->
      <script src="js/api.js"></script>
 
 

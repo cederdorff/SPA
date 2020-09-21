@@ -1,4 +1,4 @@
-// Splash screen - https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode //
+// Splash screen - source: https://www.youtube.com/watch?v=xuA83OYTE7I&ab_channel=dcode //
 window.addEventListener("load", function () {
     const splash = document.querySelector(".splash");
     splash.className += " hidden";
@@ -28,7 +28,7 @@ function toggleNotifications() {
     var x = document.getElementById("toggleBtn1");
     var y = document.getElementById("toggleBG1");
     if (x.style.margin === "5px auto 5px 5px") {
-        x.style.margin = "5px 5px 5px auto"
+        x.style.margin = "5px 5px 5px auto";
         y.style.background = "#27d07d";
     } else {
         x.style.margin = "5px auto 5px 5px";
@@ -40,7 +40,7 @@ function toggleFav() {
     var x = document.getElementById("toggleBtn2");
     var y = document.getElementById("toggleBG2");
     if (x.style.margin === "5px auto 5px 5px") {
-        x.style.margin = "5px 5px 5px auto"
+        x.style.margin = "5px 5px 5px auto";
         y.style.background = "#27d07d";
     } else {
         x.style.margin = "5px auto 5px 5px";
@@ -72,6 +72,7 @@ for (let j = 0; j < 4; j++) {
 function iocnChange() {
     const tabIcons = document.querySelectorAll('.tabs a img:nth-of-type(2)');
     const tabs = document.querySelectorAll('.tabs a ');
+    tabIcons[1].style.display = 'none';
     tabs[0].addEventListener('click', () => {
         tabIcons[0].style.display = 'none';
         tabIcons[1].style.display = 'block';
@@ -90,3 +91,21 @@ function iocnChange() {
 }
 iocnChange();
 
+// Swipe functionality - source: https://codepen.io/jakeave/pen/GRJyxex//
+document.querySelector("ul").addEventListener("click", e => {
+    const li = e.target.closest("li");
+    const btn = e.target.closest("button");
+    if (li && li.scrollLeft === 0) {
+        li.scrollBy({
+            left: 1,
+            behavior: "smooth"
+        });
+    } else if (!btn && li) {
+        li.scrollBy({
+            left: -1,
+            behavior: "smooth"
+        });
+    } else if (btn && li) {
+        li.remove();
+    }
+});
