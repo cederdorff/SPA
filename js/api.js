@@ -242,3 +242,34 @@
       }
 
  });
+
+ async function fetchVenues(userName) {
+      let url = `../JSON/placelist.json`;
+      let response = await fetch(url); // fetch and wait the response
+      let data = await response.json(); // read response body and wait for parsing the JSON
+      let places = data.places;
+      appendPlaces(places);
+ }
+
+ function appendPlaces(places) {
+      let htmlTemplate = "";
+      for (const post of places) {
+           let imageUrl = post.node.thumbnail_src;
+           let imageCaption = post.node.edge_media_to_caption.edges[0].node.text;
+           let likes = post.node.edge_liked_by.count;
+           let comments = post.node.edge_media_to_comment.count;
+           let location = post.node.location.name;
+           let taggedUsers = taggedUsersToString(post.node.edge_media_to_tagged_user.edges);
+
+           htmlTemplate += /*html*/ `
+         <article>
+           <img src="${imageUrl}">
+           <p>Likes: ${likes}, Comments: ${comments}</p>
+           <p>${imageCaption}</p>
+           <p>Location: ${location}</p>
+           Tagged Users: ${taggedUsers}
+         </article>
+       `;
+      }
+      document.querySelector("#instagram-posts").innerHTML = htmlTemplate;
+ }
