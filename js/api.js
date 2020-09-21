@@ -267,6 +267,7 @@
       let places = data.places;
       appendPlaces(places);
  }
+ fetchVenues();
 
  function appendPlaces(places) {
       let htmlTemplate = "";
@@ -277,15 +278,30 @@
 
            htmlTemplate += /*html*/
                 `
-         <li> 
-          <h3>${name}</h3>
-           <p> ${adress}</p>
-         </li>
-       `;
+          <li> 
+           <h3>${name}</h3>
+            <p> ${adress}</p>
+          </li>
+        `;
       }
       document.querySelector(".venue_container").innerHTML = htmlTemplate;
  }
- fetchVenues();
+
+ function search(value) {
+      console.log(value);
+      let filteredPlaces = [];
+      for (let place of places) {
+           let name = place.venue_name.toLowerCase();
+           if (name.includes(value.toLowerCase())) {
+                filteredPlaces.push(place);
+           }
+      }
+
+      console.log(filteredPlaces);
+      appendPlaces(filteredPlaces);
+ }
+
+
 
  const searchContainer = document.querySelector('.search_container');
  const searchBar = document.querySelector('#home>input');
